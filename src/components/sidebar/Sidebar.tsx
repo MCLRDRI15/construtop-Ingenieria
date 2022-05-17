@@ -49,7 +49,7 @@ export const CustomMainSideBar = ({ currentPage }: CustomMainNavbarProps) => {
                     ))  }
                 </ul>
             </div>
-            <div className='h-screen p-12 font-semibold text-dark-purple text-2xl flex-1'>
+            <div className='h-screen p-12 font-semibold text-black text-2xl flex-1'>
                 <span className='relative right-3'>Construtop Ingenieria S.A.S</span>
             </div>
         </div>

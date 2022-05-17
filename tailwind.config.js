@@ -9,7 +9,7 @@ module.exports = {
         colors: {
         // Standard
         hoverGray: '#eef2f3',
-        "dark-purple": "#081A51",
+        "dark-purple": "#373B44",
         "": "",
       },
     },
