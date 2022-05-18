@@ -45,8 +45,9 @@ export const CustomMainNavbar = ({ currentPage }: CustomMainNavbarProps) => {
                   />
                  </div>
               <div className='relative right-4 z-40'>
-                <div className='flex justify-between items-center'>
-                  <span className='text-black font-serif text-2xl font-medium'>{currentPage}</span>
+                <div className='flex flex-col justify-between items-center'>
+                  <span className='text-gray-300 font-serif text-xs font-medium'>Pagina:</span>
+                  <span className='text-yellow-500 font-serif text-2xl font-medium'>{currentPage}</span>
                 </div>
               </div>
             </div>

@@ -80,7 +80,7 @@ export const MainNavbarItem = ({
   };
   return (
     <a
-      className='flex w-full items-start rounded-lg px-4 py-6 text-sm text-gray-700 border-l-4 border-transparent cursor-pointer hover:text-lava-red-dark hover:bg-gray-100'
+      className='flex w-full items-start rounded-lg px-4 py-6 text-sm text-gray-800 border-l-4 border-transparent cursor-pointer hover:text-yellow-500 hover:bg-gray-100'
       role='menuitem'
       tabIndex={-1}
       id={id}
