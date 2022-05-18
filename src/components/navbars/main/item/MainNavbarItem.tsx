@@ -80,19 +80,22 @@ export const MainNavbarItem = ({
   };
   return (
     <a
-      className='flex w-full items-start rounded-lg px-4 py-6 text-sm text-gray-800 border-l-4 border-transparent cursor-pointer hover:text-yellow-500 hover:bg-gray-100'
+      className='flex items-center content-center lg:rounded-lg lg:px-4 py-6 text-sm text-gray-800 border-l-4 border-transparent cursor-pointer hover:text-yellow-500 hover:bg-gray-100'
       role='menuitem'
       tabIndex={-1}
       id={id}
       data-cy={`${text.toLowerCase()}-main-navbar-item`}
       onClick={onClick}
     >
-      {icon && (
-        <div className='mr-2 text-lava-red flex-shrink-0 h-6 w-6'>
+      <div className='flex content-center mx-auto'>
+        {icon && (
+          <div className='mr-2 text-yellow-500 h-6 w-6'>
           {iconSwitch(icon)}
-        </div>
-      )}
-      {text}
+          </div>
+        )}
+        {text}
+      </div>
+     
     </a>
   );
 };
