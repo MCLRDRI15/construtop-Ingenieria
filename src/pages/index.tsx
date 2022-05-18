@@ -1,5 +1,6 @@
+import { MainLayout } from '@layouts';
 import Head from 'next/head'
-import HomeComponent from 'src/screens/home/HomeComponents';
+
 
 export default function Home() {
   return (
@@ -12,7 +13,11 @@ export default function Home() {
         <link rel="icon" href='/favicon.ico'></link>
         <link rel="manifest" href="/site.webmanifest"/>
       </Head>
-      <HomeComponent />
+      <MainLayout currentPage={'Inicio'} data={''} >
+        <div className={``}>
+
+        </div>
+      </MainLayout>
     </div>
   )
 }

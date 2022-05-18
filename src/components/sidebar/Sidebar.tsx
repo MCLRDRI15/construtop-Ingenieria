@@ -1,7 +1,7 @@
 import { ArrowCircleLeftIcon } from '@heroicons/react/solid';
 import { useState } from 'react';
 import Image from 'next/image'
-import construtop from '../../assets/construtop.jpeg'
+import construtop from '../../assets/construtop ingenieria.png'
 import { CustomSidebarItem } from './SidebarItems';
 
 export interface CustomMainNavbarProps {
@@ -31,7 +31,7 @@ export const CustomMainSideBar = ({ currentPage }: CustomMainNavbarProps) => {
                         alt="Picture of the author"
                         width="60px"
                         height="60px"
-                        className='cursor-pointer duration-500 rounded-3xl'
+                        className='cursor-pointer duration-500 rounded-xl'
                          />
                     </div>
                      <span className={`text-white origin-left font-medium text-2xl duration-300

@@ -21,8 +21,10 @@
     "baseUrl": ".",
     "paths": {
       "@HOC": [
-        "src/components/HOC/index"
+        "src/components/HOC/index"  
       ],
+      "@layouts": ["src/components/layouts/index"],
+      "@navbars": ["src/components/navbars/index"],
     },
     "incremental": true
   },

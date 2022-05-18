@@ -1,7 +1,9 @@
+import { MainNavbar } from '@navbars';
+
 export interface MainLayoutProps {
   children: any;
-  currentPage?: string;
-  data?: any;
+  currentPage: string;
+  data: any;
 }
 
 export default function MainLayout({
@@ -11,13 +13,11 @@ export default function MainLayout({
 }: MainLayoutProps) {
   return (
     <>
-      <div className='fixed  bg-header-gray w-18 h-full z-50 border-r '>
-        {/* <NavigationNavBar /> */}
-      </div>
       <div>
-        {/* <MainNavbarProjects currentPage={currentPage} pageData={data} /> */}
+        <MainNavbar currentPage={currentPage} pageData={data} />
         {children}
       </div>
     </>
   );
 }
+
