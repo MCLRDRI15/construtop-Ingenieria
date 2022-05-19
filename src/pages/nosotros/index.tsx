@@ -26,7 +26,7 @@ export default function NosotrosPage() {
         <link rel="icon" href="/favicon.ico"></link>
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
-      <MainLayout currentPage={"nosotros"} data={""}>
+      <MainLayout currentPage={"Nosotros"} data={""}>
         <div className={``}></div>
       </MainLayout>
     </>

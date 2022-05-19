@@ -26,7 +26,7 @@ export default function BlogPage() {
         <link rel="icon" href="/favicon.ico"></link>
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
-      <MainLayout currentPage={"contacto"} data={""}>
+      <MainLayout currentPage={"Contacto"} data={""}>
         <div className={``}></div>
       </MainLayout>
     </>

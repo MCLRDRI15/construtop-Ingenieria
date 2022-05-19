@@ -26,7 +26,7 @@ export default function ProyectosPage() {
         <link rel="icon" href="/favicon.ico"></link>
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
-      <MainLayout currentPage={"proyectos"} data={""}>
+      <MainLayout currentPage={"Proyectos"} data={""}>
         <div className={``}></div>
       </MainLayout>
     </>

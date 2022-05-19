@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import { useRouter } from "next/router";
 import Image from "next/image";
-import { MenuIcon } from "@heroicons/react/solid";
+import { MenuIcon, XIcon } from "@heroicons/react/solid";
 import construtop from "../../../assets/ConstrutopIng.png";
 import { MainNavbarItem } from "@navbars";
 
@@ -32,10 +32,10 @@ export const CustomMainNavbar = ({ currentPage }: CustomMainNavbarProps) => {
   };
 
   return (
-    <nav className="lg:p-3 z-40 sticky top-0 lg:bg-gray-50 shadow-md w-full">
-      <div className="lg:flex justify-around lg:h-20">
-        <div className="lg:border lg:rounded-3xl lg:shadow bg-white items-center p-1">
-          <div className="flex justify-around items-center lg:w-72">
+    <nav className="fixed top-0 left-0 shadow-md w-full">
+      <div className="md:flex items-center justify-between bg-gray-50 md:py-4 md:px-10">
+        <div className="md:border md:rounded-3xl shadow bg-white items-center p-1 z-40">
+          <div className="flex justify-around md:shadow-none items-center md:w-60 lg:w-72">
             <div>
               <Image height={70} width={70} src={construtop} alt="Construtop" />
             </div>
@@ -50,22 +50,27 @@ export const CustomMainNavbar = ({ currentPage }: CustomMainNavbarProps) => {
               </div>
             </div>
             {
-              <div className="lg:hidden">
-                <MenuIcon
-                  className="w-6"
-                  onClick={() => setIsActiveNav(!isActiveNav)}
-                />
+              <div className="md:hidden">
+                {isActiveNav ? (
+                  <MenuIcon
+                    className="w-6 cursor-pointer"
+                    onClick={() => setIsActiveNav(!isActiveNav)}
+                  />
+                ) : (
+                  <XIcon
+                    className="w-6 cursor-pointer"
+                    onClick={() => setIsActiveNav(!isActiveNav)}
+                  />
+                )}
               </div>
             }
           </div>
         </div>
         <div
           id="navbar-menu"
-          className={
-            isActiveNav
-              ? "lg:flex focus:outline-none text-center items-center ease-in transition-all duration-300"
-              : "hidden transition-all duration-300 ease-in lg:inline-flex"
-          }
+          className={`md:flex md:items-center focus:outline-none text-center items-center absolute md:static md:z-auto left-0 w-full md:w-auto transition-all duration-500 ease-in ${
+            isActiveNav ? "left-0 opacity-100" : "left-[-490px] opacity-0"
+          } md:opacity-100 `}
           role="menu"
           aria-orientation="vertical"
           aria-labelledby="user-menu-button"
