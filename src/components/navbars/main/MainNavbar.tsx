@@ -51,7 +51,7 @@ export const CustomMainNavbar = ({ currentPage }: CustomMainNavbarProps) => {
             </div>
             {
               <div className="md:hidden">
-                {isActiveNav ? (
+                {!isActiveNav ? (
                   <MenuIcon
                     className="w-6 cursor-pointer"
                     onClick={() => setIsActiveNav(!isActiveNav)}
