@@ -10,8 +10,8 @@ import construtop from "../../assets/footerImage.png";
 const CustomFooter = () => {
   return (
     <footer className="bg-gray-100 text-white">
-      <div className="md:flex md:justify-between md: items-center sm:px-12 px-4 bg-[#ffffff19] py-2">
-        <div className="flex sm:w-96 items-center p-2 mb-2">
+      <div className="md:flex md:justify-between md:items-center sm:px-12 px-4 bg-[#ffffff19] md:p-1">
+        <div className="flex sm:w-96 items-center p-2">
           <div className="rounded-lg mr-3">
             <Image
               height={50}
