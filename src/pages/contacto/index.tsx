@@ -36,7 +36,7 @@ export default function BlogPage() {
       </Head>
       <MainLayout currentPage={"Contacto"} data={""}>
         <div className={`relative top-32 md:top-40`}>
-          <div className="sm:border sm:rounded-md border-gray-200 bg-gray-200 shadow-xl sm:shadow-gray-400 sm:p-4 mx-auto items-center sm:w-2/3">
+          <div className="sm:border rounded-lg border-gray-200 bg-gray-200 shadow-xl sm:shadow-gray-400 sm:p-4 mx-auto items-center w-11/12 sm:w-2/3">
             <div className="flex flex-col border items-center bg-gray-200 rounded-lg">
               <div>
                 <Image
@@ -52,7 +52,7 @@ export default function BlogPage() {
                       <div className="border p-1 rounded-full bg-gray-400 items-center">
                         <PhoneIncomingIcon className="w-3 h-3" />
                       </div>
-                      <span className="text-gray-700 text-xs font-sans font-medium ml-2 whitespace-nowrap">
+                      <span className="text-gray-700 text-xs font-sans font-medium ml-2 whitespace-pre-line">
                         (06)8914477 - 3206939832 - 3137165788
                       </span>
                     </div>
@@ -60,7 +60,7 @@ export default function BlogPage() {
                       <div className="border p-1 rounded-full bg-gray-400 items-center">
                         <MailOpenIcon className="w-3 h-3" />
                       </div>
-                      <span className="text-gray-700 text-xs font-sans font-medium ml-2 whitespace-nowrap">
+                      <span className="text-gray-700 text-xs font-sans font-medium ml-2 whitespace-pre-line">
                         construtopingenieria@gmail.com
                       </span>
                     </div>
