@@ -1,6 +1,10 @@
 import React from "react";
 
-const Carousel = () => {
+interface CarouselDataProps {
+  dataImg: any[];
+}
+
+const Carousel = ({ dataImg }: CarouselDataProps) => {
   return <div>Carousel</div>;
 };
 

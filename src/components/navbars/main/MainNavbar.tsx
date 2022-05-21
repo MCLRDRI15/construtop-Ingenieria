@@ -32,7 +32,7 @@ export const CustomMainNavbar = ({ currentPage }: CustomMainNavbarProps) => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 shadow-md w-full">
+    <nav className="fixed top-0 left-0 shadow-md w-full z-40">
       <div className="md:flex items-center justify-between bg-gray-50 md:py-4 md:px-10">
         <div className="md:border md:rounded-3xl shadow bg-white items-center p-1 z-40">
           <div className="flex justify-around md:shadow-none items-center md:w-60 lg:w-72">
@@ -68,7 +68,7 @@ export const CustomMainNavbar = ({ currentPage }: CustomMainNavbarProps) => {
         </div>
         <div
           id="navbar-menu"
-          className={`md:flex md:items-center focus:outline-none text-center items-center absolute md:static md:z-auto left-0 w-full md:w-auto transition-all duration-500 ease-in ${
+          className={`md:flex md:items-center focus:outline-none text-center items-center absolute md:static left-0 w-full md:w-auto transition-all duration-500 ease-in ${
             isActiveNav ? "left-0 opacity-100" : "left-[-490px] opacity-0"
           } md:opacity-100 `}
           role="menu"

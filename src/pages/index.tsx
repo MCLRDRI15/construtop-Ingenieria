@@ -1,8 +1,8 @@
 import { MainLayout } from "@layouts";
-import Image from "next/image";
-import portada from "../assets/portada.jpeg";
 import Carousel from "src/components/carousel/Carousel";
+import { carouselData } from "../components/utils/carouselData";
 import Head from "next/head";
+import CustomFooter from "src/components/footer/Footer";
 
 export default function Inicio() {
   return (
@@ -30,8 +30,11 @@ export default function Inicio() {
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
       <MainLayout currentPage={"Inicio"} data={""}>
-        <div className={""}>
-          <Carousel />
+        <div className={"bg-gray-100 relative top-24 md:top-32"}>
+          <Carousel dataImg={carouselData} />
+        </div>
+        <div className="fixed bottom-0 w-full z-40">
+          <CustomFooter />
         </div>
       </MainLayout>
     </div>
