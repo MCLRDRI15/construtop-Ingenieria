@@ -37,13 +37,61 @@ export default function BlogPage() {
       <MainLayout currentPage={"Contacto"} data={""}>
         <div className={`relative top-32 md:top-40`}>
           <div className="sm:border rounded-lg border-gray-200 bg-gray-200 shadow-xl sm:shadow-gray-400 sm:p-4 mx-auto items-center w-11/12 sm:w-2/3">
-            <div className="flex flex-col border items-center bg-gray-200 rounded-lg">
+            <div className="flex flex-col border items-center bg-gray-200 rounded-lg mb-10">
               <div>
                 <Image
                   src={contact}
                   alt="Construtop"
                   className="rounded-t-lg"
                 />
+              </div>
+              <div className="border border-gray-300 rounded-b-lg shadow w-full">
+                <div className="text-center font-serif">
+                  <span className="text-2xl">Contactanos.</span>
+                  <form>
+                    <div className="p-10 text-left lg:text-center">
+                      <span className="text-sm font-semibold text-yellow-500">
+                        Nombre:
+                      </span>
+                      <br></br>
+                      <input
+                        className="w-full lg:w-2/4 text-sm p-1 rounded-lg shadow-md border border-gray-400 my-1 focus:ring focus:outline-none focus:ring-yellow-500"
+                        type="text"
+                        name="Nombre"
+                        placeholder="Nombre Persona/Empresa"
+                      ></input>
+                      <br></br>
+                      <span className="text-sm font-semibold text-yellow-500">
+                        Email:
+                      </span>
+                      <br></br>
+                      <input
+                        className="w-full lg:w-2/4 text-sm p-1 rounded-lg shadow-md border border-gray-400 my-1 focus:ring focus:outline-none focus:ring-yellow-500"
+                        type="email"
+                        name="Email"
+                        placeholder="Email"
+                      ></input>
+                      <br></br>
+                      <span className="text-sm font-semibold text-yellow-500">
+                        Déjanos tu mensaje:
+                      </span>
+                      <br></br>
+                      <textarea
+                        className="w-full lg:w-2/4 text-sm p-1 rounded-lg shadow-md border border-gray-400 my-1 focus:ring focus:outline-none focus:ring-yellow-500"
+                        name="Message"
+                        placeholder="Mensaje"
+                        required
+                      ></textarea>
+                      <br></br>
+                      <button
+                        type="submit"
+                        className="w-full lg:w-1/4 text-lg rounded-lg shadow-md border text-white border-blue-400 bg-blue-400 my-1 focus:ring focus:outline-none focus:ring-yellow-500"
+                      >
+                        Enviar
+                      </button>
+                    </div>
+                  </form>
+                </div>
               </div>
               <div className="items-center">
                 <div className="py-4">
