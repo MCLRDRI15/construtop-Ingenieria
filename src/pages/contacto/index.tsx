@@ -6,10 +6,23 @@ import {
   MailOpenIcon,
   LocationMarkerIcon,
 } from "@heroicons/react/solid";
-import construtop from "../../assets/ConstrutopIng.png";
+import emailjs from "emailjs-com";
 import contact from "../../assets/contact/contact.jpg";
 
 export default function BlogPage() {
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_b2zho5t",
+        "template_o7a2wit",
+        e.target,
+        "kTshzYUZarB9XBLtU"
+      )
+      .then((reponse) => console.log(reponse))
+      .catch((error) => console.log(error));
+    e.target.reset();
+  };
   return (
     <>
       <Head>
@@ -48,7 +61,7 @@ export default function BlogPage() {
               <div className="border border-gray-300 rounded-b-lg shadow w-full">
                 <div className="text-center font-serif">
                   <span className="text-2xl">Contactanos.</span>
-                  <form>
+                  <form onSubmit={sendEmail}>
                     <div className="p-10 text-left lg:text-center">
                       <span className="text-sm font-semibold text-yellow-500">
                         Nombre:
@@ -59,6 +72,7 @@ export default function BlogPage() {
                         type="text"
                         name="Nombre"
                         placeholder="Nombre Persona/Empresa"
+                        required
                       ></input>
                       <br></br>
                       <span className="text-sm font-semibold text-yellow-500">
@@ -70,6 +84,7 @@ export default function BlogPage() {
                         type="email"
                         name="Email"
                         placeholder="Email"
+                        required
                       ></input>
                       <br></br>
                       <span className="text-sm font-semibold text-yellow-500">
