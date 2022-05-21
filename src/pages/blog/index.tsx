@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { MainLayout } from "@layouts";
+import CustomFooter from "src/components/footer/Footer";
 
 export default function BlogPage() {
   return (
@@ -28,6 +29,9 @@ export default function BlogPage() {
       </Head>
       <MainLayout currentPage={"Blog"} data={""}>
         <div className={``}></div>
+        <div className="fixed bottom-0 w-full z-40">
+          <CustomFooter />
+        </div>
       </MainLayout>
     </>
   );
