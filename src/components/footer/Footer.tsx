@@ -30,27 +30,27 @@ const CustomFooter = () => {
             </h1>
           </div>
         </div>
-        <div className="border shadow-lg rounded-lg p-2 hidden sm:inline-flex">
+        <div className="border shadow-lg rounded-lg p-2 hidden md:inline-flex">
           <div className="flex flex-wrap text-white text-center">
             <div className="flex items-center mr-2">
-              <div className="border p-1 sm:p-2 rounded-full bg-gray-400 items-center">
-                <PhoneIncomingIcon className="w-3 h-3 sm:w-5 sm:h-5" />
+              <div className="border p-1 rounded-full bg-gray-400 items-center">
+                <PhoneIncomingIcon className="w-3 h-3" />
               </div>
               <span className="text-gray-700 text-xs font-sans font-medium">
                 (06)8914477 - 3206939832 - 3137165788
               </span>
             </div>
             <div className="flex items-center mr-2">
-              <div className="border p-1 sm:p-2 rounded-full bg-gray-400 items-center">
-                <MailOpenIcon className="w-3 h-3 sm:w-5 sm:h-5" />
+              <div className="border p-1 rounded-full bg-gray-400 items-center">
+                <MailOpenIcon className="w-3 h-3" />
               </div>
               <span className="text-gray-700 text-xs font-sans font-medium">
                 construtopingenieria@gmail.com
               </span>
             </div>
             <div className="flex items-center mr-2">
-              <div className="border p-1 sm:p-2 rounded-full bg-gray-400 items-center">
-                <LocationMarkerIcon className="w-3 h-3 sm:w-5 sm:h-5" />
+              <div className="border p-1 rounded-full bg-gray-400 items-center">
+                <LocationMarkerIcon className="w-3 h-3" />
               </div>
               <span className="text-gray-700 text-xs font-sans font-medium">
                 Calle 58A #24 - 28 Barrio la estrella - Manizales Caldas -
