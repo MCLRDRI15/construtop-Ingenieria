@@ -48,25 +48,25 @@ export default function BlogPage() {
               <div className="items-center">
                 <div className="py-4">
                   <div className="text-white text-center">
-                    <div className="flex items-center mr-2 mb-2">
+                    <div className="flex flex-col sm:flex-row items-center mr-2 mb-2">
                       <div className="border p-1 rounded-full bg-gray-400 items-center">
-                        <PhoneIncomingIcon className="w-3 h-3" />
+                        <PhoneIncomingIcon className="w-5 h-5 sm:w-3 sm:h-3" />
                       </div>
                       <span className="text-gray-700 text-xs font-sans font-medium ml-2 whitespace-pre-line">
                         (06)8914477 - 3206939832 - 3137165788
                       </span>
                     </div>
-                    <div className="flex items-center mr-2 mb-2">
+                    <div className="flex flex-col sm:flex-row  items-center mr-2 mb-2">
                       <div className="border p-1 rounded-full bg-gray-400 items-center">
-                        <MailOpenIcon className="w-3 h-3" />
+                        <MailOpenIcon className="w-5 h-5 sm:w-3 sm:h-3" />
                       </div>
                       <span className="text-gray-700 text-xs font-sans font-medium ml-2 whitespace-pre-line">
                         construtopingenieria@gmail.com
                       </span>
                     </div>
-                    <div className="flex items-center mr-2 mb-2">
+                    <div className="flex flex-col sm:flex-row  items-center mr-2 mb-2">
                       <div className="border p-1 rounded-full bg-gray-400 items-center">
-                        <LocationMarkerIcon className="w-3 h-3" />
+                        <LocationMarkerIcon className="w-5 h-5 sm:w-3 sm:h-3" />
                       </div>
                       <span className="text-gray-700 text-xs font-sans font-medium ml-2 whitespace-pre-line">
                         Calle 58A #24 - 28 Barrio la estrella - Manizales Caldas
