@@ -8,6 +8,13 @@ import {
 } from "@heroicons/react/solid";
 import emailjs from "emailjs-com";
 import contact from "../../assets/contact/contact.jpg";
+import { ToastContainer, toast, cssTransition } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+const bounce = cssTransition({
+  enter: "animate__animated animate__bounceIn",
+  exit: "animate__animated animate__bounceOut",
+});
 
 export default function BlogPage() {
   const sendEmail = (e) => {
@@ -19,8 +26,16 @@ export default function BlogPage() {
         e.target,
         "kTshzYUZarB9XBLtU"
       )
-      .then((reponse) => console.log(reponse))
-      .catch((error) => console.log(error));
+      .then((response) =>
+        toast.success(`Tu mensaje ha sido enviado!`, {
+          transition: bounce,
+        })
+      )
+      .catch((error) =>
+        toast.error(`Ha ocurrido un error en el envio!`, {
+          transition: bounce,
+        })
+      );
     e.target.reset();
   };
   return (
@@ -151,6 +166,7 @@ export default function BlogPage() {
             </div>
           </div>
         </div>
+        <ToastContainer transition={bounce} />
       </MainLayout>
     </>
   );
