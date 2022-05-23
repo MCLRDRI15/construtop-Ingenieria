@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import Head from "next/head";
 import { MainLayout } from "@layouts";
 import Image from "next/image";
@@ -10,6 +11,7 @@ import emailjs from "emailjs-com";
 import contact from "../../assets/contact/contact.jpg";
 import { ToastContainer, toast, cssTransition } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const bounce = cssTransition({
   enter: "animate__animated animate__bounceIn",
@@ -17,27 +19,41 @@ const bounce = cssTransition({
 });
 
 export default function BlogPage() {
+  const captcha = useRef(null);
+
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs
-      .sendForm(
-        "service_b2zho5t",
-        "template_o7a2wit",
-        e.target,
-        "kTshzYUZarB9XBLtU"
-      )
-      .then((response) =>
-        toast.success(`Tu mensaje ha sido enviado!`, {
-          transition: bounce,
-        })
-      )
-      .catch((error) =>
-        toast.error(`Ha ocurrido un error en el envio!`, {
-          transition: bounce,
-        })
-      );
-    e.target.reset();
+    if (captcha.current.getValue()) {
+      emailjs
+        .sendForm(
+          "service_b2zho5t",
+          "template_o7a2wit",
+          e.target,
+          "kTshzYUZarB9XBLtU"
+        )
+        .then((response) =>
+          toast.success(`Tu mensaje ha sido enviado!`, {
+            transition: bounce,
+          })
+        )
+        .catch((error) =>
+          toast.error(`Ha ocurrido un error en el envio!`, {
+            transition: bounce,
+          })
+        );
+      e.target.reset();
+    } else {
+      toast.error(`Por Favor acepta el Captcha`, {
+        transition: bounce,
+      });
+    }
   };
+
+  function onChange() {
+    if (captcha.current.getValue()) {
+      console.log("Usuario Verificado");
+    }
+  }
   return (
     <>
       <Head>
@@ -112,6 +128,14 @@ export default function BlogPage() {
                         placeholder="Mensaje"
                         required
                       ></textarea>
+                      <br></br>
+                      <div className="text-center mx-auto w-80 pl-2">
+                        <ReCAPTCHA
+                          ref={captcha}
+                          sitekey="6LfZogsgAAAAANqd6IuGx0MdwsYpUQfrG8uqoxQz"
+                          onChange={onChange}
+                        />
+                      </div>
                       <br></br>
                       <button
                         type="submit"
