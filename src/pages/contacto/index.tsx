@@ -132,7 +132,7 @@ export default function BlogPage() {
                       <div className="text-center mx-auto w-80 pl-2">
                         <ReCAPTCHA
                           ref={captcha}
-                          sitekey="6LfZogsgAAAAANqd6IuGx0MdwsYpUQfrG8uqoxQz"
+                          sitekey="6LcYHRMgAAAAALWi0p6cHdZxSvlFn07KDhEaMwpe"
                           onChange={onChange}
                         />
                       </div>
