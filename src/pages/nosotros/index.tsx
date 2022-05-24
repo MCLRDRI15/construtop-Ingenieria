@@ -43,7 +43,7 @@ export default function NosotrosPage() {
                 LO QUE NOS IDENTIFICA
               </span>
             </div>
-            <div className="mx-10 my-6 border border-gray-100 rounded-t-2xl shadow-sm shadow-gray-400 lg:flex lg::content-around">
+            <div className="sm:mx-10 my-6 sm:border border-gray-100 rounded-t-2xl sm:shadow-sm shadow-gray-400 lg:flex lg::content-around">
               <div className="p-10">
                 <Image
                   src={identifica2}
@@ -75,7 +75,7 @@ export default function NosotrosPage() {
                 </p>
               </div>
             </div>
-            <div className="mx-10 my-6 border border-gray-100 rounded-b-2xl shadow-sm shadow-gray-400 lg:flex lg::content-around">
+            <div className="sm:mx-10 my-6 sm:border border-gray-100 rounded-b-2xl sm:shadow-sm shadow-gray-400 lg:flex lg::content-around">
               <div className="p-10 text-center">
                 <Image
                   src={identifica}
