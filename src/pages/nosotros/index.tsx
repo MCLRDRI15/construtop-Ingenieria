@@ -144,7 +144,7 @@ export default function NosotrosPage() {
                 con el medio ambiente.
               </p>
             </div>
-            <div className="mx-auto lg:m-10 p-3 sm:flex sm:flex-wrap sm:content-around my-10">
+            <div className="mx-auto lg:m-10 p-3 sm:flex sm:flex-wrap sm:content-around">
               <div className="border-2 border-dashed bg-gray-100 border-gray-600 hover:border-yellow-500 my-3  mx-auto rounded-2xl lg:w-96">
                 <div className="flex flex-col content-around items-center">
                   <div className="border-2 border-yellow-500 rounded-full p-2 mx-4 my-4">
@@ -203,7 +203,14 @@ export default function NosotrosPage() {
               </div>
             </div>
           </div>
-          <div className="bg-gray-50"></div>
+          <div className="bg-gray-50 py-10 mb-44">
+            <div className="relative bg-gray-200 text-gray-700 mx-4 sm:mx-20">
+              <input type="checkbox"></input>
+              <div className="bg-blue-500 h-12 w-full pl-5 flex items-center">
+                <h1 className="">Primera seccion del acordeon</h1>
+              </div>
+            </div>
+          </div>
         </div>
         <div className="fixed bottom-0 w-full z-40">
           <CustomFooter />
