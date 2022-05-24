@@ -40,7 +40,7 @@ export default function NosotrosPage() {
               <span className="text-3xl font-serif font-semibold">
                 POLITICA DE CALIDAD
               </span>
-              <p className="mx-10 my-5 text-md font-serif">
+              <p className="mx-1 my-5 text-md font-serif">
                 CONSTRUTOP INGENIERIA S.A.S., realiza la construcción de obras
                 civiles, Obras de Urbanismo y Obras estabilidad cumpliendo las
                 especificaciones, siguiendo los Procedimientos debidamente
@@ -51,7 +51,7 @@ export default function NosotrosPage() {
               <span className="text-3xl font-serif font-semibold">
                 OBJETIVOS
               </span>
-              <p className="mx-10 my-5 text-md font-serif">
+              <p className="mx-1 my-5 text-md font-serif">
                 Tiene como objetivo general la construcción de obras de
                 ingeniería civil, urbanismo y estabilidad y todos aquellos
                 trabajos conexos de acondicionamiento en instalaciones
@@ -61,7 +61,7 @@ export default function NosotrosPage() {
                 con el medio ambiente.
               </p>
             </div>
-            <div className="mx-auto lg:m-10 p-3 sm:flex sm:flex-wrap sm:content-around">
+            <div className="mx-auto lg:m-10 p-3 sm:flex sm:flex-wrap sm:content-around my-10">
               <div className="border-2 border-dashed bg-gray-100 border-gray-600 hover:border-yellow-500 my-3  mx-auto rounded-2xl lg:w-96">
                 <div className="flex flex-col content-around items-center">
                   <div className="border-2 border-yellow-500 rounded-full p-2 mx-4 my-4">
