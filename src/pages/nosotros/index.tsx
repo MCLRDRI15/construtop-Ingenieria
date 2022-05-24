@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { MainLayout } from "@layouts";
-import { InformationCircleIcon } from "@heroicons/react/solid";
+import { FingerPrintIcon } from "@heroicons/react/solid";
 import { Tooltip } from "src/components/inputs/tooltip/Tooltip";
 import CustomFooter from "src/components/footer/Footer";
 import Image from "next/image";
@@ -43,13 +43,21 @@ export default function NosotrosPage() {
                 LO QUE NOS IDENTIFICA
               </span>
             </div>
-            <div className="sm:mx-10 my-6 sm:border border-gray-100 rounded-t-2xl sm:shadow-sm shadow-gray-400 lg:flex lg::content-around">
-              <div className="p-10">
-                <Image
-                  src={identifica2}
-                  alt="Obras civiles"
-                  className="rounded-3xl"
-                />
+            <div className="sm:mx-10 my-6 sm:border border-gray-200 rounded-t-2xl sm:shadow-md shadow-gray-400 lg:flex lg::content-around">
+              <div className="p-10 overflow-hidden">
+                <div className="relative overflow-hidden rounded-3xl items-center align-middle">
+                  <div className="bg-blue-400 rounded-3xl z-20 opacity-0 hover:opacity-60 transition-all duration-800 ease-in w-full h-full absolute overflow-hidden flex flex-col items-center align-middle">
+                    <FingerPrintIcon className="text-white w-10 sm:w-20 mt-auto text-opacity-100 align-middle" />
+                    <span className="text-white text-center mb-auto text-lg sm:text-3xl font-serif">
+                      Nuestra huella en cada obra
+                    </span>
+                  </div>
+                  <Image
+                    src={identifica2}
+                    alt="Obras civiles"
+                    className="rounded-3xl z-10 absolute overflow-hidden"
+                  />
+                </div>
               </div>
               <div className="lg:w-2/3 md:my-auto mx-10">
                 <span className="text-3xl font-serif font-semibold">
@@ -75,7 +83,7 @@ export default function NosotrosPage() {
                 </p>
               </div>
             </div>
-            <div className="sm:mx-10 my-6 sm:border border-gray-100 rounded-b-2xl sm:shadow-sm shadow-gray-400 lg:flex lg::content-around">
+            <div className="sm:mx-10 my-6 sm:border border-gray-200 rounded-b-2xl sm:shadow-md shadow-gray-400 lg:flex lg::content-around">
               <div className="p-10 text-center">
                 <Image
                   src={identifica}
