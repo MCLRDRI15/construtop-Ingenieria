@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { MainLayout } from "@layouts";
-import { FingerPrintIcon } from "@heroicons/react/solid";
+import { FingerPrintIcon, ShieldCheckIcon } from "@heroicons/react/solid";
 import { Tooltip } from "src/components/inputs/tooltip/Tooltip";
 import CustomFooter from "src/components/footer/Footer";
 import Image from "next/image";
@@ -39,16 +39,16 @@ export default function NosotrosPage() {
         <div className={`relative top-24 md:top-28`}>
           <div className="py-10 bg-gray-50">
             <div className="mx-10 text-center">
-              <span className="text-3xl font-serif text-yellow-500 font-semibold">
+              <span className="text-lg sm:text-3xl font-serif text-yellow-500 font-semibold">
                 LO QUE NOS IDENTIFICA
               </span>
             </div>
             <div className="sm:mx-10 my-6 sm:border border-gray-200 rounded-t-2xl sm:shadow-md shadow-gray-400 lg:flex lg::content-around">
-              <div className="p-10 overflow-hidden">
+              <div className="p-3 sm:p-10 overflow-hidden">
                 <div className="relative overflow-hidden rounded-3xl items-center align-middle">
-                  <div className="bg-blue-400 rounded-3xl z-20 opacity-0 hover:opacity-60 transition-all duration-800 ease-in w-full h-full absolute overflow-hidden flex flex-col items-center align-middle">
-                    <FingerPrintIcon className="text-white w-10 sm:w-20 mt-auto text-opacity-100 align-middle" />
-                    <span className="text-white text-center mb-auto text-lg sm:text-3xl font-serif">
+                  <div className="bg-blue-400 rounded-3xl z-20 my-1 opacity-0 hover:opacity-60 transition-all duration-800 ease-in w-full h-full absolute bottom-1 overflow-hidden flex flex-col items-center align-middle">
+                    <FingerPrintIcon className="text-black w-10 sm:w-20 mt-auto text-opacity-100 align-middle" />
+                    <span className="text-black text-center mb-auto text-lg sm:text-3xl font-serif">
                       Nuestra huella en cada obra
                     </span>
                   </div>
@@ -59,11 +59,11 @@ export default function NosotrosPage() {
                   />
                 </div>
               </div>
-              <div className="lg:w-2/3 md:my-auto mx-10">
+              <div className="lg:w-2/3 md:my-auto mx-4 sm:mx-10">
                 <span className="text-3xl font-serif font-semibold">
                   MISIÓN
                 </span>
-                <p className="mx-1 my-5 text-md font-serif">
+                <p className="my-5 text-md font-serif">
                   Somos una empresa dedicada a diferentes actividades de la
                   ingeniería civil como construcción de obras civiles, Obras de
                   urbanismo y Obras de estabilidad, ofrecemos nuestro servicios
@@ -84,14 +84,24 @@ export default function NosotrosPage() {
               </div>
             </div>
             <div className="sm:mx-10 my-6 sm:border border-gray-200 rounded-b-2xl sm:shadow-md shadow-gray-400 lg:flex lg::content-around">
-              <div className="p-10 text-center">
-                <Image
-                  src={identifica}
-                  alt="Obras civiles"
-                  className="rounded-3xl"
-                />
+              <div className="p-3 sm:p-10 text-center">
+                <div className="relative overflow-hidden rounded-3xl text-center items-center align-middle">
+                  <div className="bg-blue-400 rounded-3xl z-20 my-1 opacity-0 hover:opacity-60 transition-all duration-800 ease-in w-full h-full absolute bottom-1 text-center overflow-hidden flex flex-col items-center align-middle">
+                    <ShieldCheckIcon className="text-black w-10 sm:w-20 mt-auto text-opacity-100 align-middle" />
+                    <span className="text-black text-center mb-auto text-lg sm:text-3xl font-serif">
+                      Nos inspira la Calidad
+                    </span>
+                  </div>
+                  <Image
+                    width={900}
+                    height={600}
+                    src={identifica}
+                    alt="Obras civiles"
+                    className="rounded-3xl"
+                  />
+                </div>
               </div>
-              <div className="lg:w-2/3 md:my-auto mx-10">
+              <div className="lg:w-2/3 md:my-auto mx-4 sm:mx-10">
                 <span className="text-3xl font-serif font-semibold">
                   VISIÓN
                 </span>
@@ -109,7 +119,7 @@ export default function NosotrosPage() {
             </div>
           </div>
           <div className="py-10">
-            <div className="mx-10">
+            <div className="mx-3 sm:mx-10">
               <span className="text-3xl font-serif font-semibold">
                 POLITICA DE CALIDAD
               </span>
