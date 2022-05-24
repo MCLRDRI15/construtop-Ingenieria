@@ -24,24 +24,30 @@ export default function BlogPage() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs
-      .sendForm(
-        "service_b2zho5t",
-        "template_o7a2wit",
-        e.target,
-        "kTshzYUZarB9XBLtU"
-      )
-      .then((response) =>
-        toast.success(`Tu mensaje ha sido enviado!`, {
-          transition: bounce,
-        })
-      )
-      .catch((error) =>
-        toast.error(`Ha ocurrido un error en el envio!`, {
-          transition: bounce,
-        })
-      );
-    e.target.reset();
+    if (captcha.current.getValue()) {
+      emailjs
+        .sendForm(
+          "service_b2zho5t",
+          "template_o7a2wit",
+          e.target,
+          "kTshzYUZarB9XBLtU"
+        )
+        .then((response) =>
+          toast.success(`Tu mensaje ha sido enviado!`, {
+            transition: bounce,
+          })
+        )
+        .catch((error) =>
+          toast.error(`Ha ocurrido un error en el envio!`, {
+            transition: bounce,
+          })
+        );
+      e.target.reset();
+    } else {
+      toast.error(`Por Favor acepta el Captcha`, {
+        transition: bounce,
+      });
+    }
   };
 
   function onChange() {
@@ -124,11 +130,12 @@ export default function BlogPage() {
                         required
                       ></textarea>
                       <br></br>
-                      <div className="text-center mx-auto hidden sm:inline-flex sm:w-80 pl-2">
+                      <div className="mx-auto pr-60 sm:pl-2">
                         <ReCAPTCHA
                           ref={captcha}
                           sitekey="6LcYHRMgAAAAALWi0p6cHdZxSvlFn07KDhEaMwpe"
                           onChange={onChange}
+                          className="scale-75 sm:scale-100"
                         />
                       </div>
                       <br></br>

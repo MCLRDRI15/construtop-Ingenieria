@@ -36,7 +36,7 @@ export default function NosotrosPage() {
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
       <MainLayout currentPage={"Nosotros"} data={""}>
-        <div className={`relative top-24 md:top-28`}>
+        <div className={`relative top-20 md:top-28`}>
           <div className="py-10 bg-gray-50">
             <div className="mx-10 my-10 text-center">
               <span className="text-lg sm:text-3xl lg:text-5xl font-serif text-yellow-500 font-semibold">
@@ -203,6 +203,7 @@ export default function NosotrosPage() {
               </div>
             </div>
           </div>
+          <div className="bg-gray-50"></div>
         </div>
         <div className="fixed bottom-0 w-full z-40">
           <CustomFooter />
