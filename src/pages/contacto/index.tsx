@@ -130,13 +130,15 @@ export default function BlogPage() {
                         required
                       ></textarea>
                       <br></br>
-                      <div className="mx-auto pr-60 sm:pl-2">
-                        <ReCAPTCHA
-                          ref={captcha}
-                          sitekey="6LcYHRMgAAAAALWi0p6cHdZxSvlFn07KDhEaMwpe"
-                          onChange={onChange}
-                          className="scale-75 sm:scale-100"
-                        />
+                      <div className="mx-auto flex content-center">
+                        <div className="relative right-9 sm:right-0 sm:mx-auto">
+                          <ReCAPTCHA
+                            ref={captcha}
+                            sitekey="6LcYHRMgAAAAALWi0p6cHdZxSvlFn07KDhEaMwpe"
+                            onChange={onChange}
+                            className="scale-75 sm:scale-100 items-center"
+                          />
+                        </div>
                       </div>
                       <br></br>
                       <button
