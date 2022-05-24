@@ -38,8 +38,8 @@ export default function NosotrosPage() {
       <MainLayout currentPage={"Nosotros"} data={""}>
         <div className={`relative top-24 md:top-28`}>
           <div className="py-10 bg-gray-50">
-            <div className="mx-10 text-center">
-              <span className="text-lg sm:text-3xl font-serif text-yellow-500 font-semibold">
+            <div className="mx-10 my-10 text-center">
+              <span className="text-lg sm:text-3xl lg:text-5xl font-serif text-yellow-500 font-semibold">
                 LO QUE NOS IDENTIFICA
               </span>
             </div>

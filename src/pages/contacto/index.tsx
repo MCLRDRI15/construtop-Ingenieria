@@ -12,6 +12,7 @@ import contact from "../../assets/contact/contact.jpg";
 import { ToastContainer, toast, cssTransition } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import ReCAPTCHA from "react-google-recaptcha";
+import { normalize } from "node:path/win32";
 
 const bounce = cssTransition({
   enter: "animate__animated animate__bounceIn",
@@ -129,7 +130,7 @@ export default function BlogPage() {
                         required
                       ></textarea>
                       <br></br>
-                      <div className="text-center mx-auto w-80 pl-2">
+                      <div className="text-center mx-auto hidden sm:inline-flex sm:w-80 pl-2">
                         <ReCAPTCHA
                           ref={captcha}
                           sitekey="6LcYHRMgAAAAALWi0p6cHdZxSvlFn07KDhEaMwpe"
