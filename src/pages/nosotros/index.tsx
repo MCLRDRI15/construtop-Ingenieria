@@ -7,6 +7,8 @@ import Image from "next/image";
 import brujula from "src/assets/nosotros/brujula.png";
 import casco from "src/assets/nosotros/casco.png";
 import retroexcavadora from "src/assets/nosotros/retroexcavadora.png";
+import identifica from "src/assets/identifica/identifica-1.png";
+import identifica2 from "src/assets/identifica/identifica-2.png";
 
 export default function NosotrosPage() {
   return (
@@ -35,6 +37,69 @@ export default function NosotrosPage() {
       </Head>
       <MainLayout currentPage={"Nosotros"} data={""}>
         <div className={`relative top-24 md:top-28`}>
+          <div className="py-10 bg-gray-50">
+            <div className="mx-10 text-center">
+              <span className="text-3xl font-serif text-yellow-500 font-semibold">
+                LO QUE NOS IDENTIFICA
+              </span>
+            </div>
+            <div className="mx-10 my-6 border border-gray-100 rounded-t-2xl shadow-sm shadow-gray-400 lg:flex lg::content-around">
+              <div className="p-10">
+                <Image
+                  src={identifica2}
+                  alt="Obras civiles"
+                  className="rounded-3xl"
+                />
+              </div>
+              <div className="lg:w-2/3 md:my-auto mx-10">
+                <span className="text-3xl font-serif font-semibold">
+                  MISIÓN
+                </span>
+                <p className="mx-1 my-5 text-md font-serif">
+                  Somos una empresa dedicada a diferentes actividades de la
+                  ingeniería civil como construcción de obras civiles, Obras de
+                  urbanismo y Obras de estabilidad, ofrecemos nuestro servicios
+                  a empresas públicas y / o privadas y personas naturales,
+                  siempre enmarcados dentro de una política de calidad en la
+                  ejecución de las obras, compromiso social y el progreso para
+                  la comunidad y un desarrollo humano sostenible en función del
+                  bien común liderando el mercado por medio de la
+                  responsabilidad, y eficiencia, lograr que todo nuestro
+                  personal se sienta motivado y orgulloso de pertenecer a
+                  nuestra organización, fomentando el control y la calidad en el
+                  servicio, contando con mano de obra profesional idónea y con
+                  experiencia en el área, utilizando las mejores prácticas de la
+                  Ingeniería, utilizando tecnología de punta y fomentando la
+                  investigación, con orientación a satisfacer las necesidades de
+                  nuestros clientes.
+                </p>
+              </div>
+            </div>
+            <div className="mx-10 my-6 border border-gray-100 rounded-b-2xl shadow-sm shadow-gray-400 lg:flex lg::content-around">
+              <div className="p-10 text-center">
+                <Image
+                  src={identifica}
+                  alt="Obras civiles"
+                  className="rounded-3xl"
+                />
+              </div>
+              <div className="lg:w-2/3 md:my-auto mx-10">
+                <span className="text-3xl font-serif font-semibold">
+                  VISIÓN
+                </span>
+                <p className="mx-1 my-5 text-md font-serif">
+                  Ser reconocidos como una empresa líder en la construcción de
+                  obras civiles, Obras de Urbanismo y Obras de estabilidad, que
+                  cuenta con tecnología de punta, tenemos Equipos, maquinaria,
+                  para atender a nuestros clientes, nos dedicamos a la
+                  Construcción de obras satisfaciendo a nuestros clientes por
+                  medio de la Exigencia en el control de calidad de nuestros
+                  productos terminados. Buscando siempre dar más de sí mismos y
+                  con esto lograr la satisfacción del Cliente.
+                </p>
+              </div>
+            </div>
+          </div>
           <div className="py-10">
             <div className="mx-10">
               <span className="text-3xl font-serif font-semibold">
