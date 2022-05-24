@@ -25,6 +25,7 @@
       ],
       "@layouts": ["src/components/layouts/index"],
       "@navbars": ["src/components/navbars/index"],
+      "@inputs": ["src/components/inputs/index"],
     },
     "incremental": true
   },
