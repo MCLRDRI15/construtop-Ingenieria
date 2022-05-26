@@ -1,6 +1,16 @@
 import Head from "next/head";
 import { MainLayout } from "@layouts";
-import { FingerPrintIcon, ShieldCheckIcon } from "@heroicons/react/solid";
+import {
+  FingerPrintIcon,
+  ShieldCheckIcon,
+  ChevronDownIcon,
+  SparklesIcon,
+  ScaleIcon,
+  LightBulbIcon,
+  OfficeBuildingIcon,
+  BriefcaseIcon,
+  GlobeIcon,
+} from "@heroicons/react/solid";
 import { Tooltip } from "src/components/inputs/tooltip/Tooltip";
 import CustomFooter from "src/components/footer/Footer";
 import Image from "next/image";
@@ -204,10 +214,137 @@ export default function NosotrosPage() {
             </div>
           </div>
           <div className="bg-gray-50 py-10 mb-44">
-            <div className="relative bg-gray-200 text-gray-700 mx-4 sm:mx-20">
-              <input type="checkbox"></input>
-              <div className="bg-blue-500 h-12 w-full pl-5 flex items-center">
-                <h1 className="">Primera seccion del acordeon</h1>
+            <div className="mx-10 my-10 text-center">
+              <span className="text-lg sm:text-3xl lg:text-5xl font-serif text-gray-700 font-semibold">
+                Nuestros Valores
+              </span>
+            </div>
+            <div className="relative text-gray-700 mx-4 sm:mx-20 overflow-hidden">
+              <input
+                type="checkbox"
+                className="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer"
+              ></input>
+              <div className="bg-yellow-500 h-12 w-full pl-5 flex items-center rounded-t-xl border-b-2 shadow-md shadow-gray-400">
+                <SparklesIcon className="w-7 h-6 mr-2 text-white" />
+                <h1 className="text-lg font-semibold text-white">Excelencia</h1>
+              </div>
+              <div className="absolute top-3 right-3 text-white transition-transform duration-500 rotate-180 peer-checked:rotate-0">
+                <ChevronDownIcon className="w-7 h-7" />
+              </div>
+              <div className="bg-gray-200 mx-2 overflow-hidden transition-all duration-500 max-h-40 peer-checked:max-h-0">
+                <div className="p-4">
+                  <p>
+                    Lograr los objetivos mediante la gestión eficiente de los
+                    recursos.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="relative text-gray-700 mx-4 sm:mx-20 overflow-hidden">
+              <input
+                type="checkbox"
+                className="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer"
+              ></input>
+              <div className="bg-yellow-500 h-12 w-full pl-5 flex items-center shadow-md border-b-2 shadow-gray-400">
+                <ScaleIcon className="w-7 h-6 mr-2 text-white" />
+                <h1 className="text-lg font-semibold text-white">Integridad</h1>
+              </div>
+              <div className="absolute top-3 right-3 text-white transition-transform duration-500 rotate-0 peer-checked:rotate-180">
+                <ChevronDownIcon className="w-7 h-7" />
+              </div>
+              <div className="bg-gray-200 mx-2 overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-40">
+                <div className="p-4">
+                  <p>Actuar siempre de forma ética y transparente.</p>
+                </div>
+              </div>
+            </div>
+            <div className="relative text-gray-700 mx-4 sm:mx-20 overflow-hidden">
+              <input
+                type="checkbox"
+                className="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer"
+              ></input>
+              <div className="bg-yellow-500 h-12 w-full pl-5 flex items-center shadow-md border-b-2 shadow-gray-400">
+                <LightBulbIcon className="w-7 h-6 mr-2 text-white" />
+                <h1 className="text-lg font-semibold text-white">Innovación</h1>
+              </div>
+              <div className="absolute top-3 right-3 text-white transition-transform duration-500 rotate-0 peer-checked:rotate-180">
+                <ChevronDownIcon className="w-7 h-7" />
+              </div>
+              <div className="bg-gray-200 mx-2 overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-40">
+                <div className="p-4">
+                  <p>
+                    Fomentar una cultura de mejora continua y el desarrollo de
+                    nuevas soluciones.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="relative text-gray-700 mx-4 sm:mx-20 overflow-hidden">
+              <input
+                type="checkbox"
+                className="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer"
+              ></input>
+              <div className="bg-yellow-500 h-12 w-full pl-5 flex items-center shadow-md border-b-2 shadow-gray-400">
+                <OfficeBuildingIcon className="w-7 h-6 mr-2 text-white" />
+                <h1 className="text-lg font-semibold text-white">Trabajo</h1>
+              </div>
+              <div className="absolute top-3 right-3 text-white transition-transform duration-500 rotate-0 peer-checked:rotate-180">
+                <ChevronDownIcon className="w-7 h-7" />
+              </div>
+              <div className="bg-gray-200 mx-2 overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-40">
+                <div className="p-4">
+                  <p>
+                    Trabajar de forma coordinada sobre la base de relaciones de
+                    confianza con un objetivo común.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="relative text-gray-700 mx-4 sm:mx-20 overflow-hidden">
+              <input
+                type="checkbox"
+                className="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer"
+              ></input>
+              <div className="bg-yellow-500 h-12 w-full pl-5 flex items-center shadow-md border-b-2 shadow-gray-400">
+                <BriefcaseIcon className="w-7 h-6 mr-2 text-white" />
+                <h1 className="text-lg font-semibold text-white">
+                  Orientación
+                </h1>
+              </div>
+              <div className="absolute top-3 right-3 text-white transition-transform duration-500 rotate-0 peer-checked:rotate-180">
+                <ChevronDownIcon className="w-7 h-7" />
+              </div>
+              <div className="bg-gray-200 mx-2 overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-40">
+                <div className="p-4">
+                  <p>
+                    Entender las necesidades de nuestros clientes y buscar altos
+                    niveles de satisfacción.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="relative text-gray-700 mx-4 sm:mx-20 rounded-b-xl overflow-hidden">
+              <input
+                type="checkbox"
+                className="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer"
+              ></input>
+              <div className="bg-yellow-500 h-12 w-full pl-5 flex items-center rounded-b-xl shadow-md shadow-gray-400">
+                <GlobeIcon className="w-7 h-6 mr-2 text-white" />
+                <h1 className="text-lg font-semibold text-white">
+                  Sustentabilidad
+                </h1>
+              </div>
+              <div className="absolute top-3 right-3 text-white transition-transform duration-500 rotate-0 peer-checked:rotate-180">
+                <ChevronDownIcon className="w-7 h-7" />
+              </div>
+              <div className="bg-gray-200 mx-2 overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-40">
+                <div className="p-4">
+                  <p>
+                    Actuar en armonía con el medio ambiente y las comunidades de
+                    nuestra zona de influencia, promover la seguridad y cuidar
+                    la salud de nuestros colaboradores.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
