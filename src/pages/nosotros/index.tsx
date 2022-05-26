@@ -11,12 +11,14 @@ import {
   BriefcaseIcon,
   GlobeIcon,
 } from "@heroicons/react/solid";
-import { Tooltip } from "src/components/inputs/tooltip/Tooltip";
 import CustomFooter from "src/components/footer/Footer";
 import Image from "next/image";
 import brujula from "src/assets/nosotros/brujula.png";
 import casco from "src/assets/nosotros/casco.png";
 import retroexcavadora from "src/assets/nosotros/retroexcavadora.png";
+import admin from "src/assets/nosotros/admin.png";
+import tecnico from "src/assets/nosotros/tecnico.png";
+import mercadeo from "src/assets/nosotros/mercadeo.png";
 import identifica from "src/assets/identifica/identifica-1.png";
 import identifica2 from "src/assets/identifica/identifica-2.png";
 
@@ -69,7 +71,7 @@ export default function NosotrosPage() {
                   />
                 </div>
               </div>
-              <div className="lg:w-2/3 md:my-auto mx-4 sm:mx-10">
+              <div className="lg:w-2/3 md:my-6 mx-4 sm:mx-10">
                 <span className="text-3xl font-serif font-semibold">
                   MISIÓN
                 </span>
@@ -213,7 +215,7 @@ export default function NosotrosPage() {
               </div>
             </div>
           </div>
-          <div className="bg-gray-50 py-10 mb-44">
+          <div className="bg-gray-50 py-10">
             <div className="mx-10 my-10 text-center">
               <span className="text-lg sm:text-3xl lg:text-5xl font-serif text-gray-700 font-semibold">
                 Nuestros Valores
@@ -344,6 +346,99 @@ export default function NosotrosPage() {
                     nuestra zona de influencia, promover la seguridad y cuidar
                     la salud de nuestros colaboradores.
                   </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className={`py-10 mb-44`}
+            style={{ background: "linear-gradient(to top, #8e9eab, #F8F8F8)" }}
+          >
+            <div className="p-4 shadow-lg shadow-gray-500 bg-gray-200 rounded-xl mx-4 md:mx-20 lg:mx-44">
+              <div className="mx-auto rounded-xl lg:w-2/3 bg-gray-300 hover:bg-yellow-50">
+                <div className="flex flex-col content-around items-center">
+                  <div className="text-center my-4">
+                    <div className="border border-gray-500 rounded-full p-2 mx-4">
+                      <Image
+                        height={60}
+                        width={70}
+                        src={mercadeo}
+                        alt="Obras civiles"
+                        className="shadow shadow-gray-300"
+                      />
+                    </div>
+                    <span className="font-serif text-2xl text-gray-600">
+                      Mercadeo
+                    </span>
+                  </div>
+
+                  <div className="my-3 text-center mx-2">
+                    <p className="font-serif">
+                      Hacer un análisis de lo general a lo particular de la
+                      situación del mercado, para determinar la situación
+                      social, económica y financiera, nivel de confiabilidad del
+                      proyecto, oportunidades del mercado, existencia de
+                      clientes, y cantidad demanda del tipo de proyecto.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="mx-auto rounded-xl lg:w-2/3 my-5 bg-gray-300 hover:bg-yellow-50">
+                <div className="flex flex-col content-around items-center">
+                  <div className="text-center my-4">
+                    <div className="border border-gray-500 rounded-full p-2 mx-4">
+                      <Image
+                        height={60}
+                        width={70}
+                        src={tecnico}
+                        alt="Obras civiles"
+                        className="shadow shadow-gray-300"
+                      />
+                    </div>
+                    <span className="font-serif text-2xl text-gray-600">
+                      Técnico
+                    </span>
+                  </div>
+
+                  <div className="my-3 text-center mx-2">
+                    <p className="font-serif">
+                      Realizar el análisis técnico, para definir bases en las
+                      cuales debe enfocarse una arquitectura capaz de satisfacer
+                      realmente las necesidades de la sociedad actual y que se
+                      mantenga en equilibrio con nuestro medio ambiente y
+                      cultural. Y definir proceso de construcción básico para el
+                      desarrollo de proyectos de Obras Civiles, urbanismo y
+                      estabilidad.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="mx-auto rounded-xl lg:w-2/3 my-5 bg-gray-300 hover:bg-yellow-50">
+                <div className="flex flex-col content-around items-center">
+                  <div className="text-center my-4">
+                    <div className="border border-gray-500 rounded-full p-2 mx-10">
+                      <Image
+                        height={60}
+                        width={70}
+                        src={admin}
+                        alt="Obras civiles"
+                        className="shadow shadow-gray-300"
+                      />
+                    </div>
+                    <span className="font-serif text-2xl text-gray-600">
+                      Administrativo
+                    </span>
+                  </div>
+
+                  <div className="my-3 text-center mx-2">
+                    <p className="font-serif">
+                      Realizar un análisis administrativo, para definir las
+                      necesidades de perfil del grupo empresarial y de personal
+                      tanto de planta como del proyecto. estructura
+                      organizacional, los estilos de dirección, los mecanismos
+                      de control y políticas.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>

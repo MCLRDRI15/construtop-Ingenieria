@@ -28,7 +28,6 @@ module.exports = {
         // Standard
         hoverGray: "#eef2f3",
         "dark-purple": "#373B44",
-        "": "",
       },
     },
   },
