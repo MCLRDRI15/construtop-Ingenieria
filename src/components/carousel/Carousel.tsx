@@ -18,7 +18,7 @@ const Carousel = ({ dataImg }: CarouselDataProps) => {
     slidesToScroll: 1,
   };
   return (
-    <div className="p-16 bg-gray-300 lg:rounded-xl shadow-lg shadow-gray-500">
+    <div className="p-7 sm:p-10 border bg-gray-300 lg:rounded-xl shadow-lg shadow-gray-500">
       <Slider {...settings}>
         {dataImg.map((item, index) => (
           <div key={index} className="rounded-xl overflow-hidden">
