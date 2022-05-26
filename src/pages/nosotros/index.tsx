@@ -53,7 +53,7 @@ export default function NosotrosPage() {
                 LO QUE NOS IDENTIFICA
               </span>
             </div>
-            <div className="sm:mx-10 my-6 sm:border border-gray-200 rounded-t-2xl sm:shadow-md shadow-gray-400 lg:flex lg::content-around">
+            <div className="sm:mx-10 lg:mx-40 my-6 sm:border border-gray-200 rounded-t-2xl sm:shadow-md shadow-gray-400 lg:flex lg::content-around">
               <div className="p-3 sm:p-10 overflow-hidden">
                 <div className="relative overflow-hidden rounded-3xl items-center align-middle">
                   <div className="bg-blue-400 rounded-3xl z-20 my-1 opacity-0 hover:opacity-60 transition-all duration-800 ease-in w-full h-full absolute bottom-1 overflow-hidden flex flex-col items-center align-middle">
@@ -93,7 +93,7 @@ export default function NosotrosPage() {
                 </p>
               </div>
             </div>
-            <div className="sm:mx-10 my-6 sm:border border-gray-200 rounded-b-2xl sm:shadow-md shadow-gray-400 lg:flex lg::content-around">
+            <div className="sm:mx-10 lg:mx-40 my-6 sm:border border-gray-200 rounded-b-2xl sm:shadow-md shadow-gray-400 lg:flex lg::content-around">
               <div className="p-3 sm:p-10 text-center">
                 <div className="relative overflow-hidden rounded-3xl text-center items-center align-middle">
                   <div className="bg-blue-400 rounded-3xl z-20 my-1 opacity-0 hover:opacity-60 transition-all duration-800 ease-in w-full h-full absolute bottom-1 text-center overflow-hidden flex flex-col items-center align-middle">
@@ -219,7 +219,7 @@ export default function NosotrosPage() {
                 Nuestros Valores
               </span>
             </div>
-            <div className="relative text-gray-700 mx-4 sm:mx-20 overflow-hidden">
+            <div className="relative text-gray-700 mx-4 sm:mx-20 lg:mx-72 overflow-hidden">
               <input
                 type="checkbox"
                 className="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer"
@@ -240,7 +240,7 @@ export default function NosotrosPage() {
                 </div>
               </div>
             </div>
-            <div className="relative text-gray-700 mx-4 sm:mx-20 overflow-hidden">
+            <div className="relative text-gray-700 mx-4 sm:mx-20 lg:mx-72  overflow-hidden">
               <input
                 type="checkbox"
                 className="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer"
@@ -258,7 +258,7 @@ export default function NosotrosPage() {
                 </div>
               </div>
             </div>
-            <div className="relative text-gray-700 mx-4 sm:mx-20 overflow-hidden">
+            <div className="relative text-gray-700 mx-4 sm:mx-20 lg:mx-72 overflow-hidden">
               <input
                 type="checkbox"
                 className="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer"
@@ -279,7 +279,7 @@ export default function NosotrosPage() {
                 </div>
               </div>
             </div>
-            <div className="relative text-gray-700 mx-4 sm:mx-20 overflow-hidden">
+            <div className="relative text-gray-700 mx-4 sm:mx-20 lg:mx-72  overflow-hidden">
               <input
                 type="checkbox"
                 className="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer"
@@ -300,7 +300,7 @@ export default function NosotrosPage() {
                 </div>
               </div>
             </div>
-            <div className="relative text-gray-700 mx-4 sm:mx-20 overflow-hidden">
+            <div className="relative text-gray-700 mx-4 sm:mx-20 lg:mx-72  overflow-hidden">
               <input
                 type="checkbox"
                 className="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer"
@@ -323,7 +323,7 @@ export default function NosotrosPage() {
                 </div>
               </div>
             </div>
-            <div className="relative text-gray-700 mx-4 sm:mx-20 rounded-b-xl overflow-hidden">
+            <div className="relative text-gray-700 mx-4 sm:mx-20 lg:mx-72 rounded-b-xl overflow-hidden">
               <input
                 type="checkbox"
                 className="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer"
