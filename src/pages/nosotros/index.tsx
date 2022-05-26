@@ -217,8 +217,8 @@ export default function NosotrosPage() {
           </div>
           <div className="bg-gray-50 py-10">
             <div className="mx-10 my-10 text-center">
-              <span className="text-lg sm:text-3xl lg:text-5xl font-serif text-gray-700 font-semibold">
-                Nuestros Valores
+              <span className="text-3xl lg:text-5xl font-serif text-gray-700 font-semibold">
+                Valores Corporativos
               </span>
             </div>
             <div className="relative text-gray-700 mx-4 sm:mx-20 lg:mx-72 overflow-hidden">
