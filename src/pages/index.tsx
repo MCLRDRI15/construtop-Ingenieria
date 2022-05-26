@@ -57,7 +57,7 @@ export default function Inicio() {
             </div>
           </div>
           <div className="py-20">
-            <div className="mx-10 my-10 text-center">
+            <div className="mx-10 text-center">
               <span className="text-lg sm:text-3xl lg:text-5xl font-serif text-yellow-500 font-semibold">
                 Nos especializamos en:
               </span>
