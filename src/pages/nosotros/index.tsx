@@ -351,7 +351,7 @@ export default function NosotrosPage() {
             </div>
           </div>
           <div
-            className={`py-10 mb-44`}
+            className={`py-10 mb-36 sm:mb-44`}
             style={{ background: "linear-gradient(to top, #8e9eab, #F8F8F8)" }}
           >
             <div className="p-4 shadow-lg shadow-gray-500 bg-gray-200 rounded-xl mx-4 md:mx-20 lg:mx-44">
