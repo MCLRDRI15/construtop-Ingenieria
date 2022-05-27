@@ -12,7 +12,6 @@ import contact from "../../assets/contact/contact.jpg";
 import { ToastContainer, toast, cssTransition } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import ReCAPTCHA from "react-google-recaptcha";
-import { normalize } from "node:path/win32";
 
 const bounce = cssTransition({
   enter: "animate__animated animate__bounceIn",

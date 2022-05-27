@@ -2,9 +2,9 @@ import { MainLayout } from "@layouts";
 import Carousel from "src/components/carousel/Carousel";
 import { carouselData } from "../components/utils/carouselData";
 import Head from "next/head";
+import { Tooltip } from "@inputs";
 import Image from "next/image";
 import CustomFooter from "src/components/footer/Footer";
-
 import aguasIcon from "src/assets/index/AguasIcon.png";
 import estIcon from "src/assets/index/estIcon.png";
 import urbanIcon from "src/assets/index/urbanIcon.png";
@@ -84,10 +84,23 @@ export default function Inicio() {
                         className="shadow shadow-gray-300 object-cover"
                       />
                     </div>
-                    <div className="my-3 text-center mx-2">
-                      <span className="font-serif text-yellow-500 bg-white rounded-lg p-1 font-medium">
-                        Obras de estabilidad
-                      </span>
+                    <div className="text-center mx-2 absolute top-32">
+                      <Tooltip
+                        mode={"hover"}
+                        content={
+                          <div className="w-48 h-16 z-50 bg-gray-50 rounded-xl border border-gray-600 shadow-md shadow-gray-600 relative bottom-8 right-24 p-2">
+                            <span className="whitespace-pre-line align-middle text-center text-sm text-black">
+                              Obras de estabilidad para mitigación del riesgo
+                            </span>
+                          </div>
+                        }
+                        direction={"bottom"}
+                        additionalCssToolTip={"whitespace-nowrap ml-tooltip"}
+                      >
+                        <span className="font-serif text-yellow-500 bg-white rounded-lg p-1 font-medium">
+                          Obras de estabilidad
+                        </span>
+                      </Tooltip>
                     </div>
                   </div>
                 </div>
@@ -112,9 +125,30 @@ export default function Inicio() {
                       />
                     </div>
                     <div className="my-3 text-center mx-2">
-                      <span className="font-serif text-yellow-500 bg-white rounded-lg p-1 font-medium">
-                        Manejo de aguas y BioIngeniería
-                      </span>
+                      <Tooltip
+                        mode={"hover"}
+                        content={
+                          <div className="w-56 h-auto z-50 bg-gray-50 rounded-xl border border-gray-600 shadow-md shadow-gray-600 relative bottom-20 right-28 p-2">
+                            <span className="whitespace-pre-line align-middle text-center text-sm text-black">
+                              - Construcción de acueducto y alcantarillado.
+                            </span>
+                            <br></br>
+                            <span className="whitespace-pre-line align-middle text-center text-sm text-black">
+                              - Viaducto y sistema de telemetría.
+                            </span>
+                            <br></br>
+                            <span className="whitespace-pre-line align-middle text-center text-sm text-black">
+                              - Manejo de aguas.
+                            </span>
+                          </div>
+                        }
+                        direction={"bottom"}
+                        additionalCssToolTip={"whitespace-nowrap ml-tooltip"}
+                      >
+                        <span className="font-serif text-yellow-500 bg-white rounded-lg p-1 font-medium">
+                          Manejo de aguas y BioIngeniería
+                        </span>
+                      </Tooltip>
                     </div>
                   </div>
                 </div>
@@ -139,9 +173,22 @@ export default function Inicio() {
                       />
                     </div>
                     <div className="my-3 text-center mx-2">
-                      <span className="font-serif text-yellow-500 bg-white rounded-lg p-1 font-medium">
-                        Urbanismos
-                      </span>
+                      <Tooltip
+                        mode={"hover"}
+                        content={
+                          <div className="w-48 h-16 z-50 bg-gray-50 rounded-xl border border-gray-600 shadow-md shadow-gray-600 relative bottom-8 right-24 p-2">
+                            <span className="whitespace-pre-line align-middle text-center text-sm text-black">
+                              Servicios de topografía y obras urbanas.
+                            </span>
+                          </div>
+                        }
+                        direction={"bottom"}
+                        additionalCssToolTip={"whitespace-nowrap ml-tooltip"}
+                      >
+                        <span className="font-serif text-yellow-500 bg-white rounded-lg p-1 font-medium">
+                          Urbanismos
+                        </span>
+                      </Tooltip>
                     </div>
                   </div>
                 </div>
@@ -166,9 +213,28 @@ export default function Inicio() {
                       />
                     </div>
                     <div className="my-3 text-center mx-2">
-                      <span className="font-serif text-yellow-500 bg-white rounded-lg p-1 font-medium">
-                        Obras Viales
-                      </span>
+                      <Tooltip
+                        mode={"hover"}
+                        content={
+                          <div className="w-56 h-auto z-50 bg-gray-50 rounded-xl border border-gray-600 shadow-md shadow-gray-600 relative bottom-16 right-28 p-2">
+                            <span className="whitespace-pre-line align-middle text-center text-sm text-black">
+                              - Construcción, rehabilitación, Adecuación y
+                              Mantenimiento de infraestructura vial.
+                            </span>
+                            <br></br>
+                            <span className="whitespace-pre-line align-middle text-center text-sm text-black">
+                              - Movimiento de tierras.
+                            </span>
+                            <br></br>
+                          </div>
+                        }
+                        direction={"bottom"}
+                        additionalCssToolTip={"whitespace-nowrap ml-tooltip"}
+                      >
+                        <span className="font-serif text-yellow-500 bg-white rounded-lg p-1 font-medium">
+                          Obras Viales
+                        </span>
+                      </Tooltip>
                     </div>
                   </div>
                 </div>
