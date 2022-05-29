@@ -59,65 +59,8 @@ export default function Inicio() {
               <Carousel dataImg={carouselData} />
             </div>
           </div>
-          <div className="sm:mx-10 lg:mx-40 my-6 sm:border border-gray-200 rounded-t-2xl sm:shadow-md shadow-gray-400">
-            <div className="p-3 sm:p-20 overflow-hidden">
-              <div className="relative overflow-hidden rounded-3xl items-center align-middle">
-                <div className="bg-yellow-200 rounded-3xl z-20 my-1 opacity-0 hover:opacity-60 transition-all duration-800 ease-in w-full h-full absolute bottom-1 overflow-hidden flex flex-col items-center align-middle">
-                  <HandIcon className="text-black w-10 sm:w-20 mt-auto text-opacity-100 align-middle" />
-                  <span className="text-black text-center mb-auto text-lg sm:text-3xl font-serif whitespace-pre-wrap">
-                    Somos una empresa que trabaja con Calidad y responsabilidad
-                  </span>
-                </div>
-                <Image
-                  src={mainImage}
-                  alt="Obras civiles"
-                  className="rounded-3xl z-10 absolute overflow-hidden"
-                />
-              </div>
-            </div>
-            <div className="my-6 mx-8 sm:mx-16 text-center">
-              <span className="text-3xl font-serif font-semibold">
-                Construtop Ingenieria S.A.S
-              </span>
-              <p className="my-5 text-md font-serif">
-                Somos una empresa dedicada a la construcción de obras civiles de
-                urbanismos y de estabilidad, estamos comprometidos con la
-                protección y promoción de la salud de todos nuestros
-                trabajadores, procurando su integridad fisica mediante la
-                identificación de peligros, evaluación y valoración de los
-                riesgos y sus respectivos controles. El mejoramiento continuo de
-                nuestros procesos y la protección del medio ambiente en sus
-                diferentes centros de trabajo, reforzar y mantener una actitud
-                positiva ante la prevención, preparación y eventual atención de
-                una emergencia de cualquier naturaleza, incluyendo las asociadas
-                a amenazas biosanitarias como el COVID-19.
-              </p>
-              <p className="my-5 text-md font-serif">
-                Todos los niveles de dirección asumen la responsabilidad de
-                promover un ambiente de trabajo sano y seguro, cumpliendo los
-                requisitos legales aplicables, vinculando a las partes
-                interesadas en el Sistema de Gestion de la Seguridad y la Salud
-                en el trabajo y destinando los recursos humanos, fisicos y
-                financieros necesarios para la gestión de la salud y la
-                seguridad.
-              </p>
-              <p className="my-5 text-md font-serif">
-                En nuestra empresa todos los programas desarrollados estarán
-                orientados al fomento de una cultura preventiva y de auto
-                cuidado, a la intervención de las condiciones de trabajo que
-                puedan causar accidentes o enfermedades laborales, al control
-                del ausentismo y a la preparación para emergencias.
-              </p>
-              <div className="border border-gray-300 rounded-lg shadow-md shadow-gray-200 hover:shadow-gray-400 w-48 inline-block">
-                <Link href="/nosotros">
-                  <a className="inline-flex w-full h-full p-1 cursor-pointer items-center font-serif text-yellow-500 hover:text-red-600">
-                    <LinkIcon className="w-5 h-5 mx-3" /> conócenos mas...
-                  </a>
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div className="py-20">
+
+          <div className="py-10">
             <div className="mx-10 text-center">
               <span className="text-lg sm:text-3xl lg:text-5xl font-serif text-yellow-500 font-semibold">
                 Nos especializamos en:
@@ -299,6 +242,64 @@ export default function Inicio() {
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+          <div className="sm:mx-10 pb-20 lg:mx-40 sm:border bg-gray-300 border-gray-200 sm:rounded-2xl sm:shadow-md shadow-gray-400">
+            <div className="p-3 sm:p-20 overflow-hidden">
+              <div className="relative overflow-hidden rounded-3xl items-center align-middle">
+                <div className="bg-yellow-200 rounded-3xl z-20 my-1 opacity-0 hover:opacity-60 transition-all duration-800 ease-in w-full h-full absolute bottom-1 overflow-hidden flex flex-col items-center align-middle">
+                  <HandIcon className="text-black w-10 sm:w-20 mt-auto text-opacity-100 align-middle" />
+                  <span className="text-black text-center mb-auto text-lg sm:text-3xl font-serif whitespace-pre-wrap">
+                    Somos una empresa que trabaja con Calidad y responsabilidad
+                  </span>
+                </div>
+                <Image
+                  src={mainImage}
+                  alt="Obras civiles"
+                  className="rounded-3xl z-10 absolute overflow-hidden"
+                />
+              </div>
+            </div>
+            <div className="my-6 mx-8 sm:mx-16 text-center">
+              <span className="text-3xl font-serif font-semibold">
+                Construtop Ingenieria S.A.S
+              </span>
+              <p className="my-5 text-md font-serif">
+                Somos una empresa dedicada a la construcción de obras civiles de
+                urbanismos y de estabilidad, estamos comprometidos con la
+                protección y promoción de la salud de todos nuestros
+                trabajadores, procurando su integridad fisica mediante la
+                identificación de peligros, evaluación y valoración de los
+                riesgos y sus respectivos controles. El mejoramiento continuo de
+                nuestros procesos y la protección del medio ambiente en sus
+                diferentes centros de trabajo, reforzar y mantener una actitud
+                positiva ante la prevención, preparación y eventual atención de
+                una emergencia de cualquier naturaleza, incluyendo las asociadas
+                a amenazas biosanitarias como el COVID-19.
+              </p>
+              <p className="my-5 text-md font-serif">
+                Todos los niveles de dirección asumen la responsabilidad de
+                promover un ambiente de trabajo sano y seguro, cumpliendo los
+                requisitos legales aplicables, vinculando a las partes
+                interesadas en el Sistema de Gestion de la Seguridad y la Salud
+                en el trabajo y destinando los recursos humanos, fisicos y
+                financieros necesarios para la gestión de la salud y la
+                seguridad.
+              </p>
+              <p className="my-5 text-md font-serif">
+                En nuestra empresa todos los programas desarrollados estarán
+                orientados al fomento de una cultura preventiva y de auto
+                cuidado, a la intervención de las condiciones de trabajo que
+                puedan causar accidentes o enfermedades laborales, al control
+                del ausentismo y a la preparación para emergencias.
+              </p>
+              <div className="border border-gray-300 rounded-lg shadow-md shadow-gray-400 hover:shadow-gray-500 bg-gray-200 w-48 inline-block">
+                <Link href="/nosotros">
+                  <a className="inline-flex w-full h-full p-1 cursor-pointer items-center font-serif text-yellow-500 hover:text-red-600">
+                    <LinkIcon className="w-5 h-5 mx-3" /> conócenos mas...
+                  </a>
+                </Link>
               </div>
             </div>
           </div>
