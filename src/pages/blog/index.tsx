@@ -4,7 +4,6 @@ import CustomFooter from "src/components/footer/Footer";
 import { Tooltip } from "@inputs";
 import Image from "next/image";
 
-import estIcon from "src/assets/index/estIcon.png";
 import alvaro from "src/assets/workTeam/alvaro.jpg";
 import jennifer from "src/assets/workTeam/jennifer.jpg";
 import nelson from "src/assets/workTeam/nelson.png";
