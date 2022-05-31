@@ -6,7 +6,6 @@ import Image from "next/image";
 
 import alvaro from "src/assets/workTeam/alvaro.jpg";
 import jennifer from "src/assets/workTeam/jennifer.jpg";
-import nelson from "src/assets/workTeam/nelson.png";
 import contador from "src/assets/workTeam/contador.png";
 
 export default function BlogPage() {
@@ -81,7 +80,7 @@ export default function BlogPage() {
                       <Image
                         height={150}
                         width={150}
-                        src={nelson}
+                        src={alvaro}
                         alt="Obras civiles"
                         className="shadow shadow-gray-300 object-cover"
                       />
