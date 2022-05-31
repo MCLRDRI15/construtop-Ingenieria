@@ -249,7 +249,7 @@ export default function Inicio() {
               </div>
             </div>
           </div>
-          <div className="sm:mx-10 mb-20 lg:mx-40 sm:border bg-gray-300 border-gray-200 sm:rounded-2xl sm:shadow-md shadow-gray-400">
+          <div className="sm:mx-10 mb-20 pb-6 lg:mx-40 sm:border bg-gray-300 border-gray-200 sm:rounded-2xl sm:shadow-md shadow-gray-400">
             <div className="p-3 sm:p-20 overflow-hidden">
               <div className="relative overflow-hidden rounded-3xl items-center align-middle">
                 <div className="bg-yellow-200 rounded-3xl z-20 my-1 opacity-0 hover:opacity-60 transition-all duration-800 ease-in w-full h-full absolute bottom-1 overflow-hidden flex flex-col items-center align-middle">
