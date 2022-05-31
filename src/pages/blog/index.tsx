@@ -7,7 +7,7 @@ import Image from "next/image";
 import alvaro from "src/assets/workTeam/alvaro.jpg";
 import jennifer from "src/assets/workTeam/jennifer.jpg";
 import contador from "src/assets/workTeam/contador.png";
-import nelson from "src/assets/workTeam/nelson.png";
+import nelson from "src/assets/workTeam/nelson.jpg";
 
 export default function BlogPage() {
   return (
