@@ -37,7 +37,7 @@ export default function BlogPage() {
       </Head>
       <MainLayout currentPage={"Blog"} data={""}>
         <div className={`bg-gray-50 relative top-20 md:top-28`}>
-          <div className="py-10">
+          <div className="py-16">
             <div className="mx-10 text-center">
               <span className="text-lg sm:text-3xl lg:text-5xl font-serif text-yellow-500 font-semibold">
                 Conoce nuestro equipo
