@@ -1,6 +1,10 @@
 import { MainLayout } from "@layouts";
 import Carousel from "src/components/carousel/Carousel";
-import { carouselData } from "../components/utils/carouselData";
+import MultipleCarousel from "src/components/carousel/MultipleCarousel";
+import {
+  carouselData,
+  multipleCarouselData,
+} from "../components/utils/carouselData";
 import Head from "next/head";
 import Link from "next/link";
 import { Tooltip } from "@inputs";
@@ -245,7 +249,7 @@ export default function Inicio() {
               </div>
             </div>
           </div>
-          <div className="sm:mx-10 pb-20 lg:mx-40 sm:border bg-gray-300 border-gray-200 sm:rounded-2xl sm:shadow-md shadow-gray-400">
+          <div className="sm:mx-10 mb-20 lg:mx-40 sm:border bg-gray-300 border-gray-200 sm:rounded-2xl sm:shadow-md shadow-gray-400">
             <div className="p-3 sm:p-20 overflow-hidden">
               <div className="relative overflow-hidden rounded-3xl items-center align-middle">
                 <div className="bg-yellow-200 rounded-3xl z-20 my-1 opacity-0 hover:opacity-60 transition-all duration-800 ease-in w-full h-full absolute bottom-1 overflow-hidden flex flex-col items-center align-middle">
@@ -301,6 +305,11 @@ export default function Inicio() {
                   </a>
                 </Link>
               </div>
+            </div>
+          </div>
+          <div className="text-center text-black py-1 mb-44 lg:py-10">
+            <div className="lg:px-56">
+              <MultipleCarousel dataImg={multipleCarouselData} />
             </div>
           </div>
         </div>
