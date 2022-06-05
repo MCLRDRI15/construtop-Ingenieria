@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
@@ -20,24 +16,17 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
-      "@HOC": [
-        "src/components/HOC/index"  
-      ],
+      "@HOC": ["src/components/HOC/index"],
       "@layouts": ["src/components/layouts/index"],
       "@navbars": ["src/components/navbars/index"],
       "@inputs": ["src/components/inputs/index"],
+      "@modals": ["src/components/modals/index"],
+      "@actions/global": ["src/redux/actions/global"],
+      "@reducer/global": ["src/redux/reducers/global"],
+      "@thunks/global": ["src/redux/thunks/global"]
     },
     "incremental": true
   },
-  "exclude": [
-    "node_modules",
-    ".next",
-    "out"
-  ],
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    "**/*.js"
-  ]
+  "exclude": ["node_modules", ".next", "out"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.js"]
 }

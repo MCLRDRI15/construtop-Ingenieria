@@ -28,7 +28,7 @@ export default function ProyectosPage() {
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
       <MainLayout currentPage={"Proyectos"} data={""}>
-        <div className={``}></div>
+        <div className={`relative top-20 md:top-28`}></div>
         <div className="fixed bottom-0 w-full z-40">
           <CustomFooter />
         </div>
