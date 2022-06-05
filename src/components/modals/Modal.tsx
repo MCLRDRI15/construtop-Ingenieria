@@ -33,7 +33,7 @@ const Modal = ({
           }}
         >
           <div
-            className="h-4/6 bg-white relative border shadow-xl"
+            className="my-20 bg-white relative border shadow-xl"
             onClick={(e) => {
               e.stopPropagation();
             }}
