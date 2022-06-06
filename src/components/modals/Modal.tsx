@@ -56,7 +56,7 @@ const Modal = ({
                     height={500}
                     src={item.image}
                     alt="Obras civiles"
-                    className="rounded-lg z-10 absolute overflow-hidden"
+                    className="rounded-lg z-10 absolute overflow-hidden object-cover"
                   />
                 )}
               </div>
