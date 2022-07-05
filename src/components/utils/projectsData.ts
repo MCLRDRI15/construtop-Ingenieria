@@ -92,6 +92,90 @@ export const estabilidad: any[] = [
       "Obras de estabilidad para mitigación del riesgo vereda bajo Tablazo",
     image: "/estabilidad/est-5.jpeg",
   },
+  {
+    id: "6",
+    title: "Obras de Estabilidad",
+    description:
+      "Obras de estabilidad Vía Calarcá La Paila - Autopista del Café",
+    image: "/estabilidad/est-6.jpeg",
+  },
+  {
+    id: "7",
+    title: "Obras de Estabilidad",
+    description:
+      "Obras de estabilidad Vía Calarcá La Paila - Autopista del Café",
+    image: "/estabilidad/est-7.jpeg",
+  },
+  {
+    id: "8",
+    title: "Obras de Estabilidad",
+    description:
+      "Obras de estabilidad Vía Calarcá La Paila - Autopista del Café",
+    image: "/estabilidad/est-8.jpeg",
+  },
+  {
+    id: "9",
+    title: "Obras de Estabilidad",
+    description:
+      "Obras de estabilidad Vía Calarcá La Paila - Autopista del Café",
+    image: "/estabilidad/est-9.jpeg",
+  },
+  {
+    id: "10",
+    title: "Obras de Estabilidad",
+    description:
+      "Obras de estabilidad Vía Calarcá La Paila - Autopista del Café",
+    image: "/estabilidad/est-10.jpeg",
+  },
+  {
+    id: "11",
+    title: "Obras de Estabilidad",
+    description:
+      "Obras de estabilidad Vía Calarcá La Paila - Autopista del Café",
+    image: "/estabilidad/est-11.jpeg",
+  },
+  {
+    id: "12",
+    title: "Obras de Estabilidad",
+    description:
+      "Obras de estabilidad Vía Calarcá La Paila - Autopista del Café",
+    image: "/estabilidad/est-12.jpeg",
+  },
+  {
+    id: "13",
+    title: "Obras de Estabilidad",
+    description:
+      "Obras de estabilidad Vía Calarcá La Paila - Autopista del Café",
+    image: "/estabilidad/est-13.jpeg",
+  },
+  {
+    id: "14",
+    title: "Obras de Estabilidad",
+    description:
+      "Obras de estabilidad Vía Calarcá La Paila - Autopista del Café",
+    image: "/estabilidad/est-14.jpeg",
+  },
+  {
+    id: "15",
+    title: "Obras de Estabilidad",
+    description:
+      "Obras de estabilidad Vía Calarcá La Paila - Autopista del Café",
+    image: "/estabilidad/est-15.jpeg",
+  },
+  {
+    id: "16",
+    title: "Obras de Estabilidad",
+    description:
+      "Obras de estabilidad Vía Calarcá La Paila - Autopista del Café",
+    image: "/estabilidad/est-16.jpeg",
+  },
+  {
+    id: "17",
+    title: "Obras de Estabilidad",
+    description:
+      "Pantalla Obra de Estabilidad - Vereda bajo Tablazo municipio de Manizales",
+    image: "/estabilidad/est-17.jpeg",
+  },
 ];
 
 export const aguas: any[] = [
@@ -130,5 +214,29 @@ export const aguas: any[] = [
     title: "Obras para manejo de aguas ",
     description: "Canal de rapidas en construcción",
     image: "/manejoAguas/aguas-6.jpeg",
+  },
+];
+
+export const cimentacion: any[] = [
+  {
+    id: "1",
+    title: "Obras de Cimentación",
+    description:
+      "Obras de cimentación, contruccion caisson, torre Reserva de Milan - Manizales, Colombia",
+    image: "/cimentacion/cim-1.jpeg",
+  },
+  {
+    id: "2",
+    title: "Obras de Cimentación",
+    description:
+      "Obras de cimentación, contruccion caisson, torre Reserva de Milan - Manizales, Colombia",
+    image: "/cimentacion/cim-2.jpeg",
+  },
+  {
+    id: "3",
+    title: "Obras de Cimentación",
+    description:
+      "Obras de cimentación, contruccion caisson, torre Reserva de Milan - Manizales, Colombia",
+    image: "/cimentacion/cim-3.jpeg",
   },
 ];

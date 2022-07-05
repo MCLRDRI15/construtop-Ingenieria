@@ -11,6 +11,7 @@ import {
 import {
   bioIngenieria,
   estabilidad,
+  cimentacion,
   aguas,
 } from "../../components/utils/projectsData";
 import Image from "next/image";
@@ -123,7 +124,7 @@ export default function ProyectosPage() {
               ))}
             </div>
           </div>
-          <div className="py-28 bg-gray-50 sm:mb-48 mb-32">
+          <div className="py-28 bg-gray-50">
             <div className="text-center">
               <span className="text-lg sm:text-3xl lg:text-5xl font-serif text-yellow-500 font-semibold">
                 Proyectos de manejo de Aguas y alcantarillado
@@ -131,6 +132,41 @@ export default function ProyectosPage() {
             </div>
             <div className="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-4 lg:gap-2">
               {aguas.map((item, index) => (
+                <div
+                  key={index}
+                  className="border border-gray-300 rounded-2xl bg-gray-200 relative top-20 w-72 h-96 shadow-xl shadow-gray-400 hover:shadow-blue-300 hover:scale-105 transition-all cursor-pointer duration-300 ease-in my-3 mx-auto"
+                  onClick={() => {
+                    dispatch(setModalView("showImg")),
+                      dispatch(toggleModal()),
+                      dispatch(setProjectOrPersonForEdit(item));
+                  }}
+                >
+                  <div className="p-3">
+                    <Image
+                      width={300}
+                      height={300}
+                      src={item.image}
+                      alt="Obras civiles"
+                      className="rounded-3xl z-10 absolute overflow-hidden object-cover"
+                    />
+                  </div>
+                  <div className="text-center bg-gray-50 mx-2 rounded-md p-1 border border-gray-300">
+                    <span className="text-sm font-serif">
+                      {item.description}
+                    </span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="py-28 sm:mb-48 mb-32">
+            <div className="text-center">
+              <span className="text-lg sm:text-3xl lg:text-5xl font-serif text-yellow-500 font-semibold">
+                Proyectos de Cimentación
+              </span>
+            </div>
+            <div className="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-4 lg:gap-2">
+              {cimentacion.map((item, index) => (
                 <div
                   key={index}
                   className="border border-gray-300 rounded-2xl bg-gray-200 relative top-20 w-72 h-96 shadow-xl shadow-gray-400 hover:shadow-blue-300 hover:scale-105 transition-all cursor-pointer duration-300 ease-in my-3 mx-auto"
