@@ -198,7 +198,7 @@ export default function ProyectosPage() {
           <div className="py-28 sm:mb-48 mb-32 bg-gray-50">
             <div className="text-center">
               <span className="text-lg sm:text-3xl lg:text-5xl font-serif text-yellow-500 font-semibold">
-                Proyectos de Cimentación
+                Obras Viales
               </span>
             </div>
             <div className="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-4 lg:gap-2">
