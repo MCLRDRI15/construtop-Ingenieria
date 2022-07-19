@@ -183,37 +183,31 @@ export const aguas: any[] = [
     id: "1",
     title: "Obras para manejo de aguas ",
     description: "Canal Terminado",
-    image: "/manejoAguas/aguas-1.jpeg",
+    image: "/manejoAguas/aguas-3.jpeg",
   },
   {
     id: "2",
     title: "Obras para manejo de aguas ",
     description: "Canal Terminado",
-    image: "/manejoAguas/aguas-2.jpeg",
+    image: "/manejoAguas/aguas-6.jpeg",
   },
   {
     id: "3",
     title: "Obras para manejo de aguas ",
     description: "Canal de rapidas en construcción",
-    image: "/manejoAguas/aguas-3.jpeg",
+    image: "/manejoAguas/aguas-4.jpeg",
   },
   {
     id: "4",
     title: "Obras para manejo de aguas ",
     description: "Canal de rapidas en construcción",
-    image: "/manejoAguas/aguas-4.jpeg",
+    image: "/manejoAguas/aguas-1.jpeg",
   },
   {
     id: "5",
     title: "Obras para manejo de aguas ",
-    description: "Evaluación del terreno",
-    image: "/manejoAguas/aguas-5.jpeg",
-  },
-  {
-    id: "6",
-    title: "Obras para manejo de aguas ",
     description: "Canal de rapidas en construcción",
-    image: "/manejoAguas/aguas-6.jpeg",
+    image: "/manejoAguas/aguas-2.jpeg",
   },
 ];
 
@@ -238,5 +232,26 @@ export const cimentacion: any[] = [
     description:
       "Obras de cimentación, contruccion caisson, torre Reserva de Milan - Manizales, Colombia",
     image: "/cimentacion/cim-3.jpeg",
+  },
+];
+
+export const viales: any[] = [
+  {
+    id: "1",
+    title: "Obras Viales",
+    description: "Construcción pavimentos Bosques del Cerro - Manizales Caldas",
+    image: "/viales/viales-1.jpg",
+  },
+  {
+    id: "1",
+    title: "Obras Viales",
+    description: "Construcción pavimentos Bosques del Cerro - Manizales Caldas",
+    image: "/viales/viales-3.jpg",
+  },
+  {
+    id: "1",
+    title: "Obras Viales",
+    description: "Construcción pavimentos Bosques del Cerro - Manizales Caldas",
+    image: "/viales/viales-3.jpg",
   },
 ];
