@@ -171,37 +171,6 @@ export default function BlogPage() {
                   </div>
                 </div>
               </div>
-              <div className="relative bg-gray-200 border-2 border-white w-full md:w-80 lg:w-96 h-64 overflow-hidden shadow-xl shadow-gray-500 my-3 md:mx-auto rounded-3xl">
-                <div className="absolute w-full flex flex-col content-around items-center z-20">
-                  <div className="border-2 border-black  rounded-full mx-4 my-4 overflow-hidden">
-                    <Image
-                      height={150}
-                      width={150}
-                      src={jennifer}
-                      alt="Obras civiles"
-                      className="shadow shadow-gray-300 object-cover"
-                    />
-                  </div>
-                  <div className="text-center w-full absolute top-48 bg-white">
-                    <Tooltip
-                      mode={"hover"}
-                      content={
-                        <div className="w-48 h-12 z-50 bg-gray-50 rounded-xl border border-gray-600 shadow-md shadow-gray-600 relative bottom-8 right-24 p-2">
-                          <span className="whitespace-pre-line align-middle text-center font-serif text-lg text-black">
-                            Asistente Contable
-                          </span>
-                        </div>
-                      }
-                      direction={"bottom"}
-                      additionalCssToolTip={"whitespace-nowrap ml-tooltip"}
-                    >
-                      <span className="font-serif text-yellow-500 text-lg rounded-lg w-full font-medium">
-                        Jennifer Paola C.
-                      </span>
-                    </Tooltip>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
