@@ -58,7 +58,7 @@ export default function ProyectosPage() {
           <div className="py-28 bg-gray-50">
             <div className="text-center">
               <span className="text-lg sm:text-3xl lg:text-5xl font-serif text-yellow-500 font-semibold">
-                Proyectos de BioIngeniería
+                Obras de BioIngeniería
               </span>
             </div>
             <div className="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-4 lg:gap-2">
@@ -81,7 +81,7 @@ export default function ProyectosPage() {
                       className="rounded-3xl z-10 absolute overflow-hidden object-cover"
                     />
                   </div>
-                  <div className="text-center bg-gray-50 mx-2 rounded-md p-1 border border-gray-300">
+                  <div className="text-center bg-gray-50 mx-2 rounded-md">
                     <span className="text-sm font-serif">
                       {item.description}
                     </span>
@@ -93,7 +93,7 @@ export default function ProyectosPage() {
           <div className="py-28">
             <div className="text-center">
               <span className="text-lg sm:text-3xl lg:text-5xl font-serif text-yellow-500 font-semibold">
-                Proyectos de Estabilidad
+                Obras de Estabilidad
               </span>
             </div>
             <div className="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-4 lg:gap-2">
@@ -116,7 +116,7 @@ export default function ProyectosPage() {
                       className="rounded-3xl z-10 absolute overflow-hidden object-cover"
                     />
                   </div>
-                  <div className="text-center bg-gray-50 mx-2 rounded-md p-1 border border-gray-300">
+                  <div className="text-center bg-gray-50 mx-2 rounded-md">
                     <span className="text-sm font-serif">
                       {item.description}
                     </span>
@@ -128,7 +128,7 @@ export default function ProyectosPage() {
           <div className="py-28 bg-gray-50">
             <div className="text-center">
               <span className="text-lg sm:text-3xl lg:text-5xl font-serif text-yellow-500 font-semibold">
-                Proyectos de manejo de Aguas y Escorrentía
+                Obras de manejo de Aguas y Escorrentía
               </span>
             </div>
             <div className="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-4 lg:gap-2">
@@ -151,7 +151,7 @@ export default function ProyectosPage() {
                       className="rounded-3xl z-10 absolute overflow-hidden object-cover"
                     />
                   </div>
-                  <div className="text-center bg-gray-50 mx-2 rounded-md p-1 border border-gray-300">
+                  <div className="text-center bg-gray-50 mx-2 rounded-md">
                     <span className="text-sm font-serif">
                       {item.description}
                     </span>
@@ -163,7 +163,7 @@ export default function ProyectosPage() {
           <div className="py-28">
             <div className="text-center">
               <span className="text-lg sm:text-3xl lg:text-5xl font-serif text-yellow-500 font-semibold">
-                Proyectos de Cimentación
+                Obras de Cimentación
               </span>
             </div>
             <div className="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-4 lg:gap-2">
@@ -186,7 +186,7 @@ export default function ProyectosPage() {
                       className="rounded-3xl z-10 absolute overflow-hidden object-cover"
                     />
                   </div>
-                  <div className="text-center bg-gray-50 mx-2 rounded-md p-1 border border-gray-300">
+                  <div className="text-center bg-gray-50 mx-2 rounded-md">
                     <span className="text-sm font-serif">
                       {item.description}
                     </span>
@@ -221,7 +221,7 @@ export default function ProyectosPage() {
                       className="rounded-3xl z-10 absolute overflow-hidden object-cover"
                     />
                   </div>
-                  <div className="text-center bg-gray-50 mx-2 rounded-md p-1 border border-gray-300">
+                  <div className="text-center bg-gray-50 mx-2 rounded-md">
                     <span className="text-sm font-serif">
                       {item.description}
                     </span>
