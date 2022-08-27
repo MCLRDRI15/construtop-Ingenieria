@@ -36,7 +36,7 @@ const MultipleCarousel = ({ dataImg }: CarouselDataProps) => {
                 height={750}
                 src={item.image}
                 alt={item.title}
-                className="rounded-xl"
+                className="rounded-xl object-cover"
               />
             </div>
           </div>
