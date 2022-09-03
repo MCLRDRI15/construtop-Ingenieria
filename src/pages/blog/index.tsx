@@ -4,13 +4,20 @@ import CustomFooter from "src/components/footer/Footer";
 import { Tooltip } from "@inputs";
 import Image from "next/image";
 
-import alvaro from "src/assets/workTeam/alvaro.jpg";
+import alvaro from "src/assets/workTeam/alvaro.jpeg";
 import jennifer from "src/assets/workTeam/jennifer.jpg";
 import contador from "src/assets/workTeam/contador.png";
 import ignacio from "src/assets/workTeam/ignacio.png";
 import nelson from "src/assets/workTeam/nelson.jpg";
+import { useDispatch, useSelector } from "react-redux";
+import {
+  setModalView,
+  toggleModal,
+  setProjectOrPersonForEdit,
+} from "@actions/global";
 
 export default function BlogPage() {
+  const dispatch = useDispatch();
   return (
     <>
       <Head>
@@ -47,7 +54,19 @@ export default function BlogPage() {
               <div className="flex flex-col items-center md:grid md:grid-col-2 md:grid-rows-2 md:grid-flow-col md:gap-4">
                 <div className="relative  border-2 border-white bg-gray-200 w-full md:w-80 lg:w-96 h-64 overflow-hidden shadow-xl shadow-gray-500 my-3 md:ml-auto rounded-3xl">
                   <div className="absolute w-full flex flex-col content-around items-center z-20">
-                    <div className="border-2 border-black  rounded-full  mx-4 my-4 overflow-hidden">
+                    <div
+                      className="border-2 border-black  rounded-full  mx-4 my-4 overflow-hidden"
+                      onClick={() => {
+                        dispatch(setModalView("showImg")),
+                          dispatch(toggleModal()),
+                          dispatch(
+                            setProjectOrPersonForEdit({
+                              title: "Representante Legal",
+                              image: { alvaro },
+                            })
+                          );
+                      }}
+                    >
                       <Image
                         height={150}
                         width={150}

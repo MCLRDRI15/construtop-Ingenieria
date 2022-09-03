@@ -14,6 +14,8 @@ import {
   cimentacion,
   aguas,
   viales,
+  alcantarillado,
+  acueducto,
 } from "../../components/utils/projectsData";
 import Image from "next/image";
 
@@ -163,6 +165,76 @@ export default function ProyectosPage() {
           <div className="py-28">
             <div className="text-center">
               <span className="text-lg sm:text-3xl lg:text-5xl font-serif text-yellow-500 font-semibold">
+                Obras de Alcantarillado
+              </span>
+            </div>
+            <div className="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-4 lg:gap-2">
+              {alcantarillado.map((item, index) => (
+                <div
+                  key={index}
+                  className="border border-gray-300 rounded-2xl bg-gray-200 relative top-20 w-72 h-96 shadow-xl shadow-gray-400 hover:shadow-blue-300 hover:scale-105 transition-all cursor-pointer duration-300 ease-in my-3 mx-auto"
+                  onClick={() => {
+                    dispatch(setModalView("showImg")),
+                      dispatch(toggleModal()),
+                      dispatch(setProjectOrPersonForEdit(item));
+                  }}
+                >
+                  <div className="p-3">
+                    <Image
+                      width={300}
+                      height={300}
+                      src={item.image}
+                      alt="Obras civiles"
+                      className="rounded-3xl z-10 absolute overflow-hidden object-cover"
+                    />
+                  </div>
+                  <div className="text-center bg-gray-50 mx-2 rounded-md">
+                    <span className="text-sm font-serif">
+                      {item.description}
+                    </span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="py-28 bg-gray-50">
+            <div className="text-center">
+              <span className="text-lg sm:text-3xl lg:text-5xl font-serif text-yellow-500 font-semibold">
+                Obras de adecuación y construcción de Acueductos
+              </span>
+            </div>
+            <div className="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-4 lg:gap-2">
+              {acueducto.map((item, index) => (
+                <div
+                  key={index}
+                  className="border border-gray-300 rounded-2xl bg-gray-200 relative top-20 w-72 h-96 shadow-xl shadow-gray-400 hover:shadow-blue-300 hover:scale-105 transition-all cursor-pointer duration-300 ease-in my-3 mx-auto"
+                  onClick={() => {
+                    dispatch(setModalView("showImg")),
+                      dispatch(toggleModal()),
+                      dispatch(setProjectOrPersonForEdit(item));
+                  }}
+                >
+                  <div className="p-3">
+                    <Image
+                      width={300}
+                      height={300}
+                      src={item.image}
+                      alt="Obras civiles"
+                      className="rounded-3xl z-10 absolute overflow-hidden object-cover"
+                    />
+                  </div>
+                  <div className="text-center bg-gray-50 mx-2 rounded-md">
+                    <span className="text-sm font-serif">
+                      {item.description}
+                    </span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="py-28 ">
+            <div className="text-center">
+              <span className="text-lg sm:text-3xl lg:text-5xl font-serif text-yellow-500 font-semibold">
                 Obras de Cimentación
               </span>
             </div>
@@ -195,7 +267,7 @@ export default function ProyectosPage() {
               ))}
             </div>
           </div>
-          <div className="py-28 sm:mb-48 mb-32 bg-gray-50">
+          <div className="py-28 bg-gray-50">
             <div className="text-center">
               <span className="text-lg sm:text-3xl lg:text-5xl font-serif text-yellow-500 font-semibold">
                 Obras de urbanismos y Pavimentos.
@@ -229,7 +301,7 @@ export default function ProyectosPage() {
                 </div>
               ))}
             </div>
-            <div className="border border-gray-300  bg-gray-200 relative  my-3 mx-auto mt-40 p-20">
+            <div className="border bg-gray-200 relative mx-auto mt-40 p-20">
               <div className="text-center mb-10">
                 <span className="text-lg sm:text-3xl lg:text-5xl font-serif text-yellow-500 font-semibold">
                   Construcción pavimentos Bosques del Cerro.

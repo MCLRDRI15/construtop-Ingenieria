@@ -188,40 +188,67 @@ export const aguas: any[] = [
     description: "Canal terminado",
     image: "/manejoAguas/aguas-2.jpeg",
   },
+];
+
+export const alcantarillado: any[] = [
+  {
+    id: "3",
+    title: "Construcción alcanterillado",
+    description: "Obras de Alcantarillado",
+    image: "/manejoAguas/alcantarillado-1.jpeg",
+  },
+  {
+    id: "4",
+    title: "Construcción alcanterillado",
+    description: "",
+    image: "/manejoAguas/alcantarillado-2.jpeg",
+  },
+  {
+    id: "5",
+    title: "Construcción alcanterillado",
+    description: "",
+    image: "/manejoAguas/alcantrillado-3.jpeg",
+  },
+  {
+    id: "5",
+    title: "Construcción alcanterillado",
+    description: "",
+    image: "/manejoAguas/alcantarillado-4.jpeg",
+  },
   {
     id: "6",
-    title: "Obras para manejo de aguas",
+    title: "Construcción alcanterillado",
     description:
       "Construcción alcanterillado aguas residuales con sistema de telemetría y viaducto para la Industria Licorera",
     image: "/manejoAguas/ilc-1.jpg",
   },
   {
     id: "7",
-    title: "Obras para manejo de aguas",
+    title: "Construcción alcanterillado",
     description: "",
     image: "/manejoAguas/ilc-2.jpg",
   },
   {
     id: "8",
-    title: "Obras para manejo de aguas",
+    title: "Construcción alcanterillado",
     description: "",
     image: "/manejoAguas/ilc-3.jpg",
   },
   {
     id: "9",
-    title: "Obras para manejo de aguas",
+    title: "Construcción alcanterillado",
     description: "",
     image: "/manejoAguas/ilc-4.jpg",
   },
   {
     id: "10",
-    title: "Obras para manejo de aguas",
+    title: "Construcción alcanterillado",
     description: "",
     image: "/manejoAguas/ilc-5.jpg",
   },
   {
     id: "11",
-    title: "Obras para manejo de aguas",
+    title: "Construcción alcanterillado",
     description: "",
     image: "/manejoAguas/ilc-6.jpg",
   },
@@ -246,6 +273,33 @@ export const cimentacion: any[] = [
     title: "Obras de Cimentación",
     description: "",
     image: "/cimentacion/cim-3.jpeg",
+  },
+];
+
+export const acueducto: any[] = [
+  {
+    id: "1",
+    title: "Obras de adecuación y construcción de acueductos",
+    description: "Construcción de Acueducto municipio de Aguadas",
+    image: "/acueductos/acueducto-1.jpeg",
+  },
+  {
+    id: "2",
+    title: "Obras de adecuación y construcción de acueductos",
+    description: "",
+    image: "/acueductos/acueducto-2.jpeg",
+  },
+  {
+    id: "3",
+    title: "Obras de adecuación y construcción de acueductos",
+    description: "",
+    image: "/acueductos/acueducto-3.jpeg",
+  },
+  {
+    id: "4",
+    title: "Obras de adecuación y construcción de acueductos",
+    description: "",
+    image: "/acueductos/acueducto-4.jpeg",
   },
 ];
 
