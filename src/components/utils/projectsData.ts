@@ -249,23 +249,44 @@ export const cimentacion: any[] = [
   },
 ];
 
+export const videoHandler: any[] = [
+  {
+    id: "1",
+    title: "Obras viales",
+    description: "Obras de urbanismos y Pavimentos.",
+    video: "/viales/viales-video.mp4",
+  },
+];
+
 export const viales: any[] = [
   {
     id: "1",
     title: "Obras Viales",
     description: "Construcción pavimentos Bosques del Cerro - Manizales Caldas",
+    image: "/viales/viales-6.jpeg",
+  },
+  {
+    id: "2",
+    title: "Obras Viales",
+    description: "",
+    image: "/viales/viales-4.jpeg",
+  },
+  {
+    id: "3",
+    title: "Obras Viales",
+    description: "",
+    image: "/viales/viales-5.jpeg",
+  },
+  {
+    id: "4",
+    title: "Obras Viales",
+    description: "",
+    image: "/viales/viales-3.jpg",
+  },
+  {
+    id: "6",
+    title: "Obras Viales",
+    description: "",
     image: "/viales/viales-1.jpg",
-  },
-  {
-    id: "1",
-    title: "Obras Viales",
-    description: "",
-    image: "/viales/viales-3.jpg",
-  },
-  {
-    id: "1",
-    title: "Obras Viales",
-    description: "",
-    image: "/viales/viales-3.jpg",
   },
 ];

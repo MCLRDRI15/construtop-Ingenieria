@@ -198,7 +198,7 @@ export default function ProyectosPage() {
           <div className="py-28 sm:mb-48 mb-32 bg-gray-50">
             <div className="text-center">
               <span className="text-lg sm:text-3xl lg:text-5xl font-serif text-yellow-500 font-semibold">
-                Obras Viales
+                Obras de urbanismos y Pavimentos.
               </span>
             </div>
             <div className="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-4 lg:gap-2">
@@ -228,6 +228,21 @@ export default function ProyectosPage() {
                   </div>
                 </div>
               ))}
+            </div>
+            <div className="border border-gray-300  bg-gray-200 relative  my-3 mx-auto mt-40 p-20">
+              <div className="text-center mb-10">
+                <span className="text-lg sm:text-3xl lg:text-5xl font-serif text-yellow-500 font-semibold">
+                  Construcción pavimentos Bosques del Cerro.
+                </span>
+              </div>
+              <video
+                width="500"
+                height="140"
+                controls
+                className="m-auto rounded-lg shadow-2xl shadow-gray-400 hover:shadow-blue-300 hover:scale-105 transition-all cursor-pointer duration-300 ease-in"
+              >
+                <source src="../viales/viales-video.mp4" type="video/mp4" />
+              </video>
             </div>
           </div>
         </div>

@@ -19,7 +19,7 @@ import retroexcavadora from "src/assets/nosotros/retroexcavadora.png";
 import admin from "src/assets/nosotros/admin.png";
 import tecnico from "src/assets/nosotros/tecnico.png";
 import mercadeo from "src/assets/nosotros/mercadeo.png";
-import identifica from "src/assets/identifica/identifica-1.png";
+import identifica from "src/assets/identifica/identifica-1.jpeg";
 import identifica2 from "src/assets/identifica/identifica-2.png";
 
 export default function NosotrosPage() {
