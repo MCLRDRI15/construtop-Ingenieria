@@ -155,6 +155,18 @@ export const estabilidad: any[] = [
     description: "",
     image: "/estabilidad/est-16.jpeg",
   },
+  {
+    id: "18",
+    title: "Obras de Estabilidad",
+    description: "Construcción del Muro de Contención reserva de Milán - Constructora Camú",
+    image: "/estabilidad/est-18.jpeg",
+  },
+  {
+    id: "19",
+    title: "Obras de Estabilidad",
+    description: "Obra de Estabilidad, Proyecto Reserva de Milan - Constructora Camú",
+    image: "/estabilidad/est-19.jpeg",
+  },
 ];
 
 export const aguas: any[] = [
@@ -231,7 +243,7 @@ export const alcantarillado: any[] = [
   {
     id: "8",
     title: "Construcción alcanterillado",
-    description: "",
+    description: "Viaducto descole aguas industriales al colector de aguas Manizales de la ILC",
     image: "/manejoAguas/ilc-3.jpg",
   },
   {
@@ -251,6 +263,30 @@ export const alcantarillado: any[] = [
     title: "Construcción alcanterillado",
     description: "",
     image: "/manejoAguas/ilc-6.jpg",
+  },
+  {
+    id: "12",
+    title: "Construcción alcanterillado",
+    description: "Cruce de aguas industriales al colector de aguas Manizales",
+    image: "/manejoAguas/nuevo-contenido-001.jpeg",
+  },
+  {
+    id: "13",
+    title: "Construcción alcanterillado",
+    description: "Alcantarillado de aguas residuales e industriales, para descolar al colector de aguas Manizales, para la ILC.",
+    image: "/manejoAguas/nuevo-contenido-002.jpeg",
+  },
+  {
+    id: "14",
+    title: "Construcción alcanterillado",
+    description: "Mejoramiento de la RED de alcantarillado de Chinchiná",
+    image: "/acueductos/acueducto-5.jpeg",
+  },
+  {
+    id: "15",
+    title: "Construcción alcanterillado",
+    description: "",
+    image: "/acueductos/acueducto-6.jpeg",
   },
 ];
 

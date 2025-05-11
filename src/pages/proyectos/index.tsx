@@ -316,6 +316,36 @@ export default function ProyectosPage() {
                 <source src="../viales/viales-video.mp4" type="video/mp4" />
               </video>
             </div>
+            <div className="border bg-gray-200 relative mx-auto p-20">
+              <div className="text-center mb-10">
+                <span className="text-lg sm:text-3xl lg:text-5xl font-serif text-yellow-500 font-semibold">
+                  Obra de estabilidad reserva de Milán para la constructora Camú.
+                </span>
+              </div>
+              <video
+                width="500"
+                height="140"
+                controls
+                className="m-auto rounded-lg shadow-2xl shadow-gray-400 hover:shadow-blue-300 hover:scale-105 transition-all cursor-pointer duration-300 ease-in"
+              >
+                <source src="../estabilidad/proyecto-camu.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div className="border bg-gray-200 relative mx-auto p-20">
+              <div className="text-center mb-10">
+                <span className="text-lg sm:text-3xl lg:text-5xl font-serif text-yellow-500 font-semibold">
+                  Obras de alcantarillado Industria Licorera de Caldas.
+                </span>
+              </div>
+              <video
+                width="500"
+                height="140"
+                controls
+                className="m-auto rounded-lg shadow-2xl shadow-gray-400 hover:shadow-blue-300 hover:scale-105 transition-all cursor-pointer duration-300 ease-in"
+              >
+                <source src="../manejoAguas/ILC.mp4" type="video/mp4" />
+              </video>
+            </div>
           </div>
         </div>
         <div className="fixed bottom-0 w-full z-40">

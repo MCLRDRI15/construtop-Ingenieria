@@ -49,19 +49,20 @@ const Modal = ({
                 />
               </div>
 
-              <div className="mt-4">
+              <div className="mt-4 relative w-[90vw] max-w-[800px] h-auto mx-auto">
                 {item.image && (
                   <Image
-                    width={600}
-                    height={500}
+                    width={0}
+                    height={0}
                     src={item.image}
+                    sizes="100vw"
                     alt="Obras civiles"
                     className="rounded-lg z-10 absolute overflow-hidden object-cover"
                   />
                 )}
               </div>
               <div className="w-full p-3 border bg-gray-200 border-gray-300 rounded-b-xl">
-                <span className="text-md font-serif"> {item.description} </span>
+                <span className="text-md font-serif"> {item.description ?  `${item.description} - ${item.id}` : `Evidencias - ${item.id}`} </span>
               </div>
             </div>
           </div>

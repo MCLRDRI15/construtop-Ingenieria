@@ -21,6 +21,7 @@ import tecnico from "src/assets/nosotros/tecnico.png";
 import mercadeo from "src/assets/nosotros/mercadeo.png";
 import identifica from "src/assets/identifica/identifica-1.jpeg";
 import identifica2 from "src/assets/identifica/identifica-2.png";
+import identifica3 from "src/assets/identifica/identifica-3.jpeg";
 
 export default function NosotrosPage() {
   return (
@@ -126,6 +127,31 @@ export default function NosotrosPage() {
                   medio de la Exigencia en el control de calidad de nuestros
                   productos terminados. Buscando siempre dar más de sí mismos y
                   con esto lograr la satisfacción del Cliente.
+                </p>
+              </div>
+            </div>
+            <div className="sm:mx-10 lg:mx-40 my-6 sm:border border-gray-200 rounded-t-2xl sm:shadow-md shadow-gray-400 lg:flex lg:items-center lg::content-around">
+              <div className="p-3 sm:p-10 overflow-hidden">
+                <div className="relative overflow-hidden rounded-3xl items-center align-middle">
+                  <div className="bg-blue-400 rounded-3xl z-20 my-1 opacity-0 hover:opacity-60 transition-all duration-800 ease-in w-full h-full absolute bottom-1 overflow-hidden flex flex-col items-center align-middle">
+                    <FingerPrintIcon className="text-black w-10 sm:w-20 mt-auto text-opacity-100 align-middle" />
+                    <span className="text-black text-center mb-auto text-lg sm:text-3xl font-serif">
+                      Cultura de Calidad 
+                    </span>
+                  </div>
+                  <Image
+                    src={identifica3}
+                    alt="Obras civiles"
+                    className="rounded-3xl z-10 absolute overflow-hidden"
+                  />
+                </div>
+              </div>
+              <div className="lg:w-2/3 md:my-6 mx-auto text-center px-4">
+                <span className="text-3xl font-serif font-semibold">
+                  Identificación
+                </span>
+                <p className="my-5 text-md font-serif">
+                  Nuestro Equipo de trabajo tiene un compromiso claro con la calidad.
                 </p>
               </div>
             </div>
